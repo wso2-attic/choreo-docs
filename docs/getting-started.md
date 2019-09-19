@@ -1,6 +1,6 @@
 # Getting started with Choreo
 
-1. Download Choreo Cli at - https://wso2.org/jenkins/view/products/job/products/job/choreo/
+1. Download Choreo Cli at - https://github.com/wso2/choreo/releases
 2. Extract the tar.gz file
     ```
     $tar -xf choreo-cli-0.0.1-{os}-x64.tar.gz
