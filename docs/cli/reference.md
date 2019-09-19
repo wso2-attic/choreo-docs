@@ -1,6 +1,6 @@
-# Choreo CLI (`$chor`) reference
+# Choreo CLI (*chor*) reference
 
-Choreo CLI (code name `chor`) reference is based on [Choreo CLI specification](spec.md)
+Choreo CLI (code name `$chor`) reference is based on [Choreo CLI specification](spec.md)
 
 ## Chor CLI Commands
 - [login](#chor-login) - login to Choreo
