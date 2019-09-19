@@ -3,11 +3,11 @@
 1. Download Choreo Cli at - https://wso2.org/jenkins/view/products/job/products/job/choreo/
 2. Extract the tar.gz file
     ```
-    $tar -xf choreo-cli-0.0.1-SNAPSHOT-macosx-x64.tar.gz
+    $tar -xf choreo-cli-0.0.1-{os}-x64.tar.gz
     ```
 3. Navigate to the `bin` directory and run `$chor` command
     ```
-    $cd choreo-0.0.1-SNAPSHOT/bin
+    $cd choreo-0.0.1/bin
     ```
     ```
     $./chor
