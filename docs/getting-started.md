@@ -12,4 +12,4 @@
     ```
     $./chor
     ```
-Visit [Choreo CLI reference](choreo-cli.md) for more operations to interact with Choreo 
+Visit [Choreo CLI reference](cli/reference.md) for more operations to interact with Choreo 
