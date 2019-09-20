@@ -69,7 +69,7 @@ $ chor version
 ### chor application
 
 `application` command is used to manage applications created with the Choreo platform. 
-Available sub commands include [create](#chor-application-create) and [ls](#chor-application-ls).
+Available sub commands include [create](#chor-application-create) and [list](#chor-application-list).
 
 #### Synopsis
 
@@ -110,28 +110,28 @@ $ chor application create app1 -d "My first app"
 
 [Back to Command List](#chor-cli-commands)
 
-### chor application ls
+### chor application list
 
-`application ls` command is used to list applications created with the Choreo platform.
+`application list` command is used to list applications created with the Choreo platform.
 
 #### Synopsis
 
 List applications.
 
 ```
-application ls
+application list
 ```
 
 #### Examples
 
 ```
-$ chor application ls
+$ chor application list
 ```
 
 #### Options
 
 ```
-  -h, --help   help for ls
+  -h, --help   help for list
 ```
 
 [Back to Command List](#chor-cli-commands)
