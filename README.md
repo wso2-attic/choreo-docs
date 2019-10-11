@@ -1,6 +1,6 @@
 # Choreo platform documentation
 
-This repository serves the purpose of hosting Choreo platform documentation, HowTo & user guides. Choreo documentation site is generated based on this content.
+This repository serves the purpose of hosting Choreo platform documentation, How to & user guides. Choreo documentation site is generated based on this content.
 
 ## Table of content
 - [Getting started](docs/getting-started.md)
