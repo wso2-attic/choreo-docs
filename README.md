@@ -7,7 +7,7 @@ This is a simple getting started guide for any novice user to tryout Choreo for 
 You can get started with Choreo in two ways,
 
 1. Signup with Choreo at [development.choreo.dev](https://development.choreo.dev) and starting creating an app
-2. Start with a Ballerina app on ur machine (with VSCode) and connecting to Choreo, once the app is running
+2. Start with a Ballerina app on ur machine (with [VSCode](https://ballerina.io/v1-1/learn/vscode-plugin/)) and connecting to Choreo once the app is running
 
 This document is only focusing on #2 as #1 is straightforward and intuitive enough for self servicing.
 
