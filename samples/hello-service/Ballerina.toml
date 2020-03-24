@@ -1,0 +1,5 @@
+[project]
+org-name= "nuwanbando"
+version= "0.1.0"
+
+[dependencies]
