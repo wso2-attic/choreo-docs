@@ -19,7 +19,7 @@
     * [Modulo Operation](#modulo-operation)
     * [Checking The Equality of Basic Types](#checking-the-equality-of-basic-types)
     * [Checking the Type of Variable](#checking-the-type-of-variable)
-    * [Numerica Value Comparisons](#numerica-value-comparisons)
+    * [Numerical Value Comparisons](#numerical-value-comparisons)
 * [HTTP request related operations](#http-request-related-operations)
     * [Reading a header value in the request](#reading-a-header-value-in-the-request)
     * [Checking whether a header is present in the request](#checking-whether-a-header-is-present-in-the-request)
@@ -54,7 +54,7 @@ A string is simply a sequence of characters. Double quotes (") character is used
 
 ### Signed Integers
 
-This type can be used to give numbers as an input to an expression supported field. Only numerical characters without any delimiters used to define an integer. You have the option to use ‘+’ or ‘-’ characters in the front to indicate the sign.
+This type can be used to give numbers as an input to an expression supported field. Only numerical characters without any delimiters used to define an integer. You have the option to use `+` or `-` characters in the front to indicate the sign.
 
 #### Examples
 
@@ -70,7 +70,7 @@ This type can be used to give numbers as an input to an expression supported fie
 
 #### Decimal Floating-Point Numbers
 
-A number with a decimal point falls under this data type. You have the option to use ‘+’ or ‘-’ characters in the front to indicate the sign.
+A number with a decimal point falls under this data type. You have the option to use `+` or `-` characters in the front to indicate the sign.
 
 #### Examples
 
@@ -138,7 +138,7 @@ The `+` operator can be used to do string concatenations. The string value can c
 
 ### Number Addition
 
-The ‘+’ operator can be used for number addition. The number values can come from a literal or a variable.
+The `+` operator can be used for number addition. The number values can come from a literal or a variable.
 
 #### Examples
 - Concatenating two integer literals
@@ -160,7 +160,7 @@ The ‘+’ operator can be used for number addition. The number values can come
 
 ### Number Subtraction
 
-The ‘-’ operator can be used for number subtraction. The number values can come from a literal or a variable.
+The `-` operator can be used for number subtraction. The number values can come from a literal or a variable.
 
 #### Examples
 - Subtracting two integer literals
@@ -182,7 +182,7 @@ The ‘-’ operator can be used for number subtraction. The number values can c
 
 ### Number Division
 
-The ‘/’ operator can be used for number division. The number values can come from a literal or a variable.
+The `/` operator can be used for number division. The number values can come from a literal or a variable.
 
 #### Examples
 
@@ -205,7 +205,7 @@ The ‘/’ operator can be used for number division. The number values can come
 
 ### Number Multiplication
 
-The ‘*’ operator can be used for number multiplication. The number values can come from a literal or a variable.
+The `*` operator can be used for number multiplication. The number values can come from a literal or a variable.
 
 #### Examples
 
@@ -246,14 +246,14 @@ The `%` operator can be used to get the remainder of a division. The number valu
 
 ### Checking The Equality of Basic Types
 
-Basic types in the Ballerina language are strings, integers, decimal numbers and booleans. Values of these types can be compared using the ‘==’ binary operator. The values can come from a literal or a variable. Similarly ‘!=’ operator is used to check the inequality. Please note that the resulting value is always of type boolean from these operators.
+Basic types in the Ballerina language are strings, integers, decimal numbers, and booleans. Values of these types can be compared using the `==` binary operator. The values can come from a literal or a variable. Similarly `!=` operator is used to check the inequality. Please note that the resulting value is always of type boolean from these operators.
 
 #### Examples
-- Equality of two integer literals. 
+- Equality of two integer literals
   ```
   10 == 4
   ```
-- Equality of two string literals.
+- Equality of two string literals
   ```
   "hi" == "hi"
   ```
@@ -265,7 +265,7 @@ Basic types in the Ballerina language are strings, integers, decimal numbers and
   ```
   firstNumber == secondNumber
   ```
-- Inequality of two variables. Following will return true when the value of two variables are different
+- Inequality of two variables. Following will return true when the value of two variables are different.
   ```
   firstNumber != secondNumber
   ```
@@ -280,7 +280,7 @@ The `is` operator can be used to assert the type of a variable.
   payload is json
   ```
 
-### Numerica Value Comparisons
+### Numerical Value Comparisons
 
 Following comparison operators are available in the expression editor for numeric value comparisons
 - `<` (less than)
@@ -300,10 +300,10 @@ Following comparison operators are available in the expression editor for numeri
 
 ## HTTP request related operations
 
-All the HTTP related service applications created in Choreo has a variable called `req` (of type http:Request) which the developers can use to query information related to the HTTP request. Following is a list of common use cases that an integration application developer would need to develop Choreo applications.
+All the HTTP related service applications created in Choreo has a variable called `req` (of type `http:Request`) which the developers can use to query information related to the HTTP request. Following is a list of common use cases that an integration application developer would need to develop Choreo applications.
 
 ### Reading a header value in the request
-A typical HTTP request contains many headers. Some of the headers are standard and some are custom. In an expression enabled input field the ‘req` variables ‘getHeader’ function can be used to read a specific header value.
+A typical HTTP request contains many headers. Some of the headers are standard and some are custom. In an expression enabled input field the `req` variables `getHeader` function can be used to read a specific header value.
 
 #### Examples
 - Reading the value of Access-Control-Allow-Origin HTTP header
@@ -317,7 +317,7 @@ A typical HTTP request contains many headers. Some of the headers are standard a
 
 ### Checking whether a header is present in the request
 
-Applications sometimes need to check the availability of a header before proceeding to something like reading the header value. The ‘hasHeader’  function in the req object can be used for this purpose.
+Applications sometimes need to check the availability of a header before proceeding to something like reading the header value. The `hasHeader`  function in the req object can be used for this purpose.
 
 #### Examples
 - Checking whether the "content-length" property is available as a header
@@ -331,7 +331,7 @@ Applications sometimes need to check the availability of a header before proceed
 
 ### Reading the JSON Payload of the request
 
-JSON is a common content type used for HTTP communication. The req variable’s ‘getJsonPayload’ function can be used to read the JSON payload sent with the HTTP request. Please note that the ‘getJsonPayload’’ function’s return type is ‘json | ClientError’. 
+JSON is a common content type used for HTTP communication. The req variable’s `getJsonPayload` function can be used to read the JSON payload sent with the HTTP request. Please note that the `getJsonPayload` function’s return type is `json|ClientError`.
 
 #### Examples
 - Reading the JSON Payload of the HTTP request
@@ -341,7 +341,7 @@ JSON is a common content type used for HTTP communication. The req variable’s 
 
 ### Reading the Text Payload of the request
 
-Sometimes, content is sent as a string (plain text) with the HTTP request. The req variable’s ‘getTextPayload’ function can be used to read the Text payload sent with the HTTP request. Please note that the ‘getTextPayload’’ function’s return type is string | ClientError’. 
+Sometimes, content is sent as a string (plain text) with the HTTP request. The req variable’s `getTextPayload` function can be used to read the Text payload sent with the HTTP request. Please note that the `getTextPayload` function’s return type is `string|ClientError`.
 
 #### Examples
 - Reading the Text Payload of the HTTP request
@@ -351,7 +351,7 @@ Sometimes, content is sent as a string (plain text) with the HTTP request. The r
 
 ### Reading the query parameter value
 
-Query parameters are used in an HTTP request to send additional inputs to consider when processing the request. The req variable’s getQueryParamValue function can be used to read the passed query parameter.
+Query parameters are used in an HTTP request to send additional inputs to consider when processing the request. The req variable’s `getQueryParamValue` function can be used to read the passed query parameter.
 
 #### Examples
 - Reading the query parameter named "category"
@@ -360,12 +360,12 @@ Query parameters are used in an HTTP request to send additional inputs to consid
   ```
 - Using a value stored in a variable as the query parameter name. Please note the omission of the double-quotes.
   ```
-  req.getHeader(queryParamName)
+  req.getQueryParamValue(queryParamName)
   ```
 
 ### Reading the cookies available in the request
 
-HTTP Cookies are used to to keep stateful information against a client. The req variable’s getCookies function can be used to read cookies present in the request as an array.
+HTTP Cookies are used to keep stateful information against a client. The req variable’s `getCookies` function can be used to read cookies present in the request as an array.
 
 #### Examples
 - Reading all the cookies available in the request
