@@ -1,4 +1,4 @@
-# Performance Analyzer : How do we do it?
+# Performance Analyzer : How it works
 
 This tool performs intelligent estimations of the performance of service based applications based on historical data. 
 
