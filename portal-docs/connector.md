@@ -70,7 +70,7 @@ Gmail API allows you to do integrate your Choreo application with workflows invo
 ![GMAIL2](images/connector/gmail2.png) 
 
 ### Google Calendar
-Google Calendar API allows you to do integrate your Choreo application with workflows involving listing, creating and deletion of calendar events. Similar to GitHub, the Google Calendar API wizard has two options for connecting with your account, either manually or using the standard Oauth2 flow. Then, you are able to select the required operation and provide the additional information required. 
+Google Calendar API allows you to do integrate your Choreo application with workflows involving listing, creating, and deleting of calendar events. Similar to GitHub, the Google Calendar API wizard has two options for connecting with your account, either manually or using the standard Oauth2 flow. Then, you are able to select the required operation and provide the additional information required. 
 
 ![GCALENDAR2](images/connector/gcalendar2.png) 
 
