@@ -1,4 +1,4 @@
-# Choreo APIs/Connectors 
+# APIs / Connectors 
 
 ## Table of Contents 
 <!--ts-->
