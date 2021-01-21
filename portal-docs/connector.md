@@ -30,10 +30,18 @@ These are APIs based on generic protocols that you can configure to connect to a
  * POP3  
  * IMAP 
 
-### Example - HTTP
-The HTTP API lets you communicate with an external endpoint using the HTTP protocol. 
+### HTTP
+The HTTP API lets you communicate with an external endpoint using the HTTP protocol. The HTTP connection wizard will guide you through process of connecting to an external endpoint by giving the URL, selecting the operation, setting header(s) to the request which is sent to the external endpoint, and handling the response recieved from the external call.
+![Example 1](images/connector/image1.png) 
 
-![Example 1](images/connector/image1.png)
+### SMTP
+The SMTP API lets you send an email using the SMTP protocol. The wizard will guide you through defining the SMTP server details, such as the host, username and password, and finally the details of the email, such as the sender, reciever(s), subject and body. 
+
+### POP3
+The POP3 API allows you to recieve an email. The wizard is similar to SMTP usecase, where you can create a client with the host, username, password. This API will return the first unseen email from the inbox specified with the connection parameters. 
+
+### IMAP
+Similar to the POP3, IMAP API allows you to recieve an email. The wizard is similar to POP3 case where you can create a client to recive email from the specified inbox.
 
 ## Application Specific APIs
 
