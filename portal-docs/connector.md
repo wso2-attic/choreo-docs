@@ -65,7 +65,7 @@ GitHub API allows you to do integrate your Choreo application with workflows inv
 ![GITHUB2](images/connector/github2.png) 
 
 ### Gmail
-Gmail API allows you to do integrate your Choreo applocation with workflows involving creating, modifying and sending emails. Similar to GitHub, the Gmail API wizard has two options for connecting with your account, either manually or using the standard Oauth2 flow. Then, you are able to select the required operation and provide the additional information required. 
+Gmail API allows you to do integrate your Choreo application with workflows involving creating, modifying, and sending emails. Similar to GitHub, the Gmail API wizard has two options for connecting with your account, either manually or using the standard Oauth2 flow. Then, you are able to select the required operation and provide the additional information required. 
 
 ![GMAIL2](images/connector/gmail2.png) 
 
