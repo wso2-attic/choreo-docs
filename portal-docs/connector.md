@@ -80,6 +80,6 @@ Google Sheets API allows you to do integrate your Choreo application with workfl
 ![GSHEET2](images/connector/gsheets2.png) 
 
 ### Twilio
-Twilio API allows you to integrate your Choreo application with Twilio (https://www.twilio.com/). Twilio allows you to perform operations like sending messages, voice calls, WhatsApp messages, etc. through the Twilio REST API. To use the Twilio API, you need to provide configuration parameters Account SId, Auth Token and XAuthy Key, which should be obtained from your Twilio account. The wizard will take you through this, as well as selecting the operation.
+Twilio API allows you to integrate your Choreo application with Twilio (https://www.twilio.com/). Twilio allows you to perform operations like sending messages, voice calls, WhatsApp messages, etc. through the Twilio REST API. To use the Twilio API, you need to provide configuration parameters Account SId, Auth Token, and XAuthy Key, which should be obtained from your Twilio account. The wizard will take you through this, as well as selecting the operation.
 
 ![TWILIO1](images/connector/image3.png)
