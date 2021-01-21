@@ -46,7 +46,7 @@ The POP3 API allows you to receive emails. The wizard is similar to the SMTP use
 ![POP31](images/connector/pop31.png) 
 
 ### IMAP
-Similar to the POP3, IMAP API allows you to recieve emails. The wizard is similar to POP3 case where you can create a client to recive email from the specified inbox.
+Similar to the POP3, IMAP API allows you to receive emails. The wizard is similar to the POP3 case where you can create a client to receive an email from the specified inbox.
 
 ![IMAP1](images/connector/imap1.png) 
 
