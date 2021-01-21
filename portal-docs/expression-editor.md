@@ -54,7 +54,7 @@ A string is simply a sequence of characters. Double quotes (") character is used
 
 ### Signed Integers
 
-This type can be used to give numbers as an input to an expression supported field. Only numerical characters without any delimiters used to define an integer. You have the option to use `+` or `-` characters in the front to indicate the sign.
+This type can be used to give numbers as an input to an expression supported field. Only numerical characters without any delimiters are used to define an integer. You have the option to use `+` or `-` characters in the front to indicate the sign.
 
 #### Examples
 
@@ -265,7 +265,7 @@ Basic types in the Ballerina language are strings, integers, decimal numbers, an
   ```
   firstNumber == secondNumber
   ```
-- Inequality of two variables. Following will return true when the value of two variables are different.
+- Inequality of two variables. The following will return true when the value of two variables are different.
   ```
   firstNumber != secondNumber
   ```

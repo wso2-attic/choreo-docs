@@ -13,7 +13,7 @@
 * [4-Calendar](#4-Calendar)
   * [Creating a Calendar trigger](Creating-a-Calendar-trigger)
 * [5-GitHub](#5-GitHub)
-  * [Creating a GitHub Trigger](#Creating-a-GitHub-Trigger)
+  * [Creating a GitHub trigger](#Creating-a-GitHub-trigger)
 
 <!--te-->
 
@@ -67,13 +67,13 @@ Manual trigger allows you to create an application that you can trigger manually
 
 ![Step 1](images/trigger/image2.png)
 
-## 3- Schedule 
+## 3-Schedule
 
 A Schedule trigger lets you trigger your Choreo application according to a given schedule. Hence it is used when you need your application run to be triggered based on time. The schedule is defined in the form of a cron expression. 
 
-A cron expression is a string containing sub fields separated by white spaces . Each special character (*) represents Seconds , Minutes ,Hours , Date , Month , Day and Year respectively.
+A cron expression is a string containing subfields separated by white spaces . Each special character (*) represents Seconds, Minutes, Hours, Date, Month, Day, and Year respectively.
 
-### Creating a Schedule trigger 
+### Creating a Schedule trigger
 
 1- Select Schedule from the list of triggers
 
@@ -97,7 +97,7 @@ Calendar trigger lets you trigger a Choreo application based on events in a Goog
 2- Select Calendar from the list of triggers
 ![Step 2](images/trigger/image2.png)
 
-3- If your Choreo account has not yet been connected to Google calendar you will see the following in the Calendar trigger configuration. Click “Connect to Google Calendar” and follow the on screen instructions to proceed.
+3- If your Choreo account has not yet been connected to Google calendar you will see the following in the Calendar trigger configuration. Click `Connect to Google Calendar` and follow the on screen instructions to proceed.
 
 ![Step 3](images/trigger/image7.png)
 
@@ -120,8 +120,8 @@ The supported list of events and associated actions are as follows
 |                             | deleted                | Comment on an issue is deleted           |
 | issues                      | assigned               | Issue is assigned to a user              |
 |                             | unassigned             | Issue is unassigned from a user          |
-|                             | labelled               | Label is added to an issue               |
-|                             | unlabelled             | Label is removed from an issue           |
+|                             | labeled               | Label is added to an issue               |
+|                             | unlabeled             | Label is removed from an issue           |
 |                             | opened                 | Issue is opened                          |
 |                             | edited                 | Issue is edited                          |
 |                             | milestoned             | Milestone is added to an issue           |
@@ -154,13 +154,13 @@ The supported list of events and associated actions are as follows
 |                             | deleted                | Pull request review comment is deleted
 
 
-### Creating a GitHub Trigger 
+### Creating a GitHub trigger
 
 1- Select GitHub from the list of triggers
 
 ![Step 1](images/trigger/image2.png)
 
-2- Select the GitHub event and action. If no GitHub account has been linked, “Connect to GitHub” button is displayed. Click it and follow the onscreen steps to connect to GitHub.
+2- Select the GitHub event and action. If no GitHub account has been linked, `Connect to GitHub` button is displayed. Click it and follow the onscreen steps to connect to GitHub.
 
 ![Step 2](images/trigger/image1.png)
 

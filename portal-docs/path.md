@@ -15,7 +15,7 @@
 
 ## Introduction 
 
-When creating a Choreo application with an API trigger, the Relative path from host field allows you to specify the path used to trigger the Choreo application. It could also be used to pass path parameters to your application.
+When creating a Choreo application with an API trigger, the Relative path from the host field allows you to specify the path used to trigger the Choreo application. It could also be used to pass path parameters to your application.
 
 ![Step 1](images/path/image1.png)
 
@@ -24,10 +24,10 @@ Suppose you create a Choreo application named sample with an API trigger.
 Once you deploy the application, you will receive a hostname as follows.
 https://sample-username.choreoapps.dev
 
-The URL that you need to invoke to trigger the application changes as follows based on the Relative path from host field that you specify.
+The URL that you need to invoke to trigger the application changes as follows based on the Relative path from the host field that you specify.
 
 ### 1-Empty path
-If you leave this field blank, invoking the hostname triggers the choreo application. 
+If you leave this field blank, invoking the hostname triggers the Choreo application.
 
 E.g.
 Relative path from host: empty
@@ -56,7 +56,7 @@ E.g.
 Relative path from host: /[int date]/[string day]
 Trigger URL: https://sample-username.choreoapps.dev/8/monday
 
-This allows you to read the value of date; “8” and day; “monday” within your Choreo application
+This allows you to read the value of date; “8” and day; “Monday” within your Choreo application
 
 ### 5-Query Parameters
 
