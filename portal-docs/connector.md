@@ -22,7 +22,7 @@ There are two basic types of APIs.
 
 2- Application specific APIs
 
-## Generic Protocol based  APIs
+## Generic Protocol based APIs
 
 These are APIs based on generic protocols that you can configure to connect to an external service. These include  
  * HTTP  

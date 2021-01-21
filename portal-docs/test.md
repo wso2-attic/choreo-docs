@@ -7,7 +7,7 @@
 
 * [Prerequisites](#Prerequisites)
 * [Choreo Postman Editor](#Choreo-Postman-Editor)
-  * [Getting started](#Getting-started)
+  * [Getting Started](#Getting-Started)
   * [Create or Open an Existing Application](#Create-or-Open-an-Existing-Application)
    * [Connecting Postman to Choreo](#Connecting-Postman-to-Choreo)
    * [Generate a Postman API Key](#Generate-a-Postman-API-Key)
@@ -20,23 +20,23 @@
 
 ## Introduction 
 
-This document is a step-by-step guide on using the Postman Editor of the Choreo console to manage Postman workspaces, collections and requests. 
+This document is a step-by-step guide on using the Postman Editor of the Choreo console to manage Postman workspaces, collections, and requests.
 
 ## Prerequisites 
 Make sure you have logged into the Choreo console and created an application.
 An active Postman account is required.
 
 ## Choreo Postman Editor
-The postman Editor integrates with your postman account to facilitate an easier way to create and test your Choreo application. You can,
+The Postman Editor integrates with your Postman account to facilitate an easier way to create and test your Choreo application. You can,
 
-1- Create and link postman workspaces with Choreo.
+1- Create and link Postman workspaces with Choreo.
 2- Create collections and requests for an application.
 
-All requests/collections/workspaces created will immediately be visible in your postman account.
+All requests/collections/workspaces created will immediately be visible in your Postman account.
 
-Note: you need to send requests to Choreo application using postman agent.
+Note: you need to send requests to Choreo application using the Postman agent.
 
-### Getting started
+### Getting Started
 
 ### Create or Open an Existing Application
 Log into the Choreo console and create an application. To create an application, follow our application creation guide.
@@ -45,7 +45,7 @@ Log into the Choreo console and create an application. To create an application,
 
 ### Generate a Postman API Key
 
-1- A Postman API key is required to connect your Postman account to the console. To generate an API key, go to  Postman API Keys page.
+1- A Postman API key is required to connect your Postman account to the console. To generate an API key, go to the Postman API Keys page.
 
 2- Click on the Generate API Key button.
 
@@ -76,11 +76,11 @@ Log into the Choreo console and create an application. To create an application,
 
 ### Create and Link a Workspace
 
-1- Once the API key is saved, you will be prompted to create a new workspace or select an existing workspace. The workspaces which are already available in your postman account will be shown in the drop-down list and you may choose any of your existing workspaces as well.
+1- Once the API key is saved, you will be prompted to create a new workspace or select an existing workspace. The workspaces which are already available in your Postman account will be shown in the drop-down list and you may choose any of your existing workspaces as well.
 
 ![Step 1](images/test/image5.png)
 
-2- To create a new workspace, click on + Create New option from the drop-down list.
+2- To create a new workspace, click on `+ Create New` option from the drop-down list.
 
 ![Step 2](images/test/image15.png)
 
@@ -90,7 +90,7 @@ Log into the Choreo console and create an application. To create an application,
 
 ![Step 1](images/test/image11.png)
 
-2- Click on + Add button to create a new collection. Enter collection details and click on Create.
+2- Click on `+ Add` button to create a new collection. Enter collection details and click on Create.
 
 ![Step 2](images/test/image16.png)
 
@@ -100,11 +100,11 @@ Log into the Choreo console and create an application. To create an application,
 
 ### Create a Request
 
-1- Click on the collection you’ve created and the Requests panel will be displayed. Click on + Add to create a new request.
+1- Click on the collection you’ve created and the Requests panel will be displayed. Click on `+ Add` to create a new request.
 
 ![Step 1](images/test/image1.png)
 
-2- In this view, you can create a new request by specifying request details such as name, description, HTTP method, query params, headers and body.
+2- In this view, you can create a new request by specifying request details such as name, description, HTTP method, query params, headers, and body.
 
 ![Step 2](images/test/image9.png)
 
@@ -116,7 +116,7 @@ Log into the Choreo console and create an application. To create an application,
 
 ![Step 4](images/test/image17.png)
 
-5- If you log into your Postman account through the browser or the desktop client, you may see the workspace, collection and requests created via the console.
+5- If you log into your Postman account through the browser or the desktop client, you may see the workspace, collection, and requests created via the console.
 
 ![Step 5](images/test/image3.png)
 
