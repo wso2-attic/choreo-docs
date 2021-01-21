@@ -31,7 +31,7 @@ These are APIs based on generic protocols that you can configure to connect to a
  * IMAP 
 
 ### HTTP
-The HTTP API lets you communicate with an external endpoint using the HTTP protocol. The HTTP connection wizard will guide you through process of connecting to an external endpoint by giving the URL, selecting the operation, setting header(s) to the request which is sent to the external endpoint, and handling the response recieved from the external call.
+The HTTP API lets you communicate with an external endpoint using the HTTP protocol. The HTTP connection wizard will guide you through the process of connecting to an external endpoint by giving the URL, selecting the operation, setting header(s) to the request which is sent to the external endpoint, and handling the response received from the external call.
 
 ![HTTP1](images/connector/image1.png) 
 
