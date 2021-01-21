@@ -51,9 +51,20 @@ These APIs can be used to connect to a given external application. Hence they co
   * Google Calendar
   * Google Sheets
   * Twilio
+  
+### GitHub  
+GitHub API allows you to do integrate your Choreo applucation with workflows involving GitHub organizations and repositories. The GitHub API wizard has two options for connecting with your account, either manually or using the standard Oauth2 flow. Then, you are able to select the required operation and provide the information required. 
 
-### Example - Twilio
+### Gmail
+Gmail API allows you to do integrate your Choreo applucation with workflows involving creating, modifying and sending emails. Similar to GitHub, the Gmail API wizard has two options for connecting with your account, either manually or using the standard Oauth2 flow. Then, you are able to select the required operation and provide the additional information required. 
 
-Twilio API allows you to integrate your Choreo application with Twilio (https://www.twilio.com/)
+### Google Calendar
+Google Calendar API allows you to do integrate your Choreo applucation with workflows involving listing, creating and deletion of calendar events. Similar to GitHub, the Google Calendar API wizard has two options for connecting with your account, either manually or using the standard Oauth2 flow. Then, you are able to select the required operation and provide the additional information required. 
+
+### Google Sheets
+Google Sheets API allows you to do integrate your Choreo applucation with workflows involving listing, creating and open spreadsheets. Similar to GitHub, the Google Sheets API wizard has two options for connecting with your account, either manually or using the standard Oauth2 flow. Then, you are able to select the required operation and provide the additional information required. 
+
+### Twilio
+Twilio API allows you to integrate your Choreo application with Twilio (https://www.twilio.com/). Twilio allows you to perfom operations like sending messages, voice calls, WhatsApp messages, etc. through the Twilio REST API. To use the Twilio API, you need to provide configuration parameters Account SId, Auth Token and XAuthy Key, which should be obtained from your Twilio account. The wizard will take you through this as well as selecting the operation.
 
 ![Example 2](images/connector/image3.png)
