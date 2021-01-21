@@ -32,16 +32,23 @@ These are APIs based on generic protocols that you can configure to connect to a
 
 ### HTTP
 The HTTP API lets you communicate with an external endpoint using the HTTP protocol. The HTTP connection wizard will guide you through process of connecting to an external endpoint by giving the URL, selecting the operation, setting header(s) to the request which is sent to the external endpoint, and handling the response recieved from the external call.
-![Example 1](images/connector/image1.png) 
+
+![HTTP1](images/connector/image1.png) 
 
 ### SMTP
-The SMTP API lets you send an email using the SMTP protocol. The wizard will guide you through defining the SMTP server details, such as the host, username and password, and finally the details of the email, such as the sender, reciever(s), subject and body. 
+The SMTP API lets you send emails using the SMTP protocol. The wizard will guide you through defining the SMTP server details, such as the host, username and password, and finally the details of the email, such as the sender, reciever(s), subject and body. 
+
+![SMTP1](images/connector/smtp1.png) 
 
 ### POP3
-The POP3 API allows you to recieve an email. The wizard is similar to SMTP usecase, where you can create a client with the host, username, password. This API will return the first unseen email from the inbox specified with the connection parameters. 
+The POP3 API allows you to recieve emails. The wizard is similar to SMTP usecase, where you can create a client with the host, username, password. This API will return the first unseen email from the inbox specified with the connection parameters. 
+
+![POP31](images/connector/pop31.png) 
 
 ### IMAP
-Similar to the POP3, IMAP API allows you to recieve an email. The wizard is similar to POP3 case where you can create a client to recive email from the specified inbox.
+Similar to the POP3, IMAP API allows you to recieve emails. The wizard is similar to POP3 case where you can create a client to recive email from the specified inbox.
+
+![IMAP1](images/connector/imap1.png) 
 
 ## Application Specific APIs
 
@@ -55,16 +62,24 @@ These APIs can be used to connect to a given external application. Hence they co
 ### GitHub  
 GitHub API allows you to do integrate your Choreo applucation with workflows involving GitHub organizations and repositories. The GitHub API wizard has two options for connecting with your account, either manually or using the standard Oauth2 flow. Then, you are able to select the required operation and provide the information required. 
 
+![GITHUB2](images/connector/github2.png) 
+
 ### Gmail
 Gmail API allows you to do integrate your Choreo applucation with workflows involving creating, modifying and sending emails. Similar to GitHub, the Gmail API wizard has two options for connecting with your account, either manually or using the standard Oauth2 flow. Then, you are able to select the required operation and provide the additional information required. 
+
+![GMAIL2](images/connector/gmail2.png) 
 
 ### Google Calendar
 Google Calendar API allows you to do integrate your Choreo applucation with workflows involving listing, creating and deletion of calendar events. Similar to GitHub, the Google Calendar API wizard has two options for connecting with your account, either manually or using the standard Oauth2 flow. Then, you are able to select the required operation and provide the additional information required. 
 
+![GCALENDAR2](images/connector/gcalendar2.png) 
+
 ### Google Sheets
 Google Sheets API allows you to do integrate your Choreo applucation with workflows involving listing, creating and open spreadsheets. Similar to GitHub, the Google Sheets API wizard has two options for connecting with your account, either manually or using the standard Oauth2 flow. Then, you are able to select the required operation and provide the additional information required. 
+
+![GSHEET2](images/connector/gsheets2.png) 
 
 ### Twilio
 Twilio API allows you to integrate your Choreo application with Twilio (https://www.twilio.com/). Twilio allows you to perfom operations like sending messages, voice calls, WhatsApp messages, etc. through the Twilio REST API. To use the Twilio API, you need to provide configuration parameters Account SId, Auth Token and XAuthy Key, which should be obtained from your Twilio account. The wizard will take you through this as well as selecting the operation.
 
-![Example 2](images/connector/image3.png)
+![TWILIO1](images/connector/image3.png)
