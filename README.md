@@ -1,4 +1,4 @@
-# Choreo getting started guide
+# Choreo Getting started guide
 This is a simple getting started guide for any novice user to tryout Choreo for the first time
 
 *`[based on Choreo M1 - March 21st 2020]`*
