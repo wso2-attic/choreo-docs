@@ -36,7 +36,7 @@ The HTTP API lets you communicate with an external endpoint using the HTTP proto
 ![HTTP1](images/connector/image1.png) 
 
 ### SMTP
-The SMTP API lets you send emails using the SMTP protocol. The wizard will guide you through defining the SMTP server details, such as the host, username and password, and finally the details of the email, such as the sender, reciever(s), subject and body. 
+The SMTP API lets you send emails using the SMTP protocol. The wizard will guide you through defining the SMTP server details, such as the host, username, and password, and finally the details of the email, such as the sender, receiver(s), subject, and body. 
 
 ![SMTP1](images/connector/smtp1.png) 
 
