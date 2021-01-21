@@ -41,7 +41,7 @@ The SMTP API lets you send emails using the SMTP protocol. The wizard will guide
 ![SMTP1](images/connector/smtp1.png) 
 
 ### POP3
-The POP3 API allows you to recieve emails. The wizard is similar to SMTP usecase, where you can create a client with the host, username, password. This API will return the first unseen email from the inbox specified with the connection parameters. 
+The POP3 API allows you to receive emails. The wizard is similar to the SMTP use case, where you can create a client with the host, username, password. This API will return the first unseen email from the inbox specified with the connection parameters. 
 
 ![POP31](images/connector/pop31.png) 
 
