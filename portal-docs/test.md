@@ -3,18 +3,17 @@
 ## Table of Contents
 <!--ts-->
 
-* [Introduction](#Introduction)
-
-* [Prerequisites](#Prerequisites)
-* [Choreo Postman Editor](#Choreo-Postman-Editor)
-  * [Getting Started](#Getting-Started)
-  * [Create or Open an Existing Application](#Create-or-Open-an-Existing-Application)
-   * [Connecting Postman to Choreo](#Connecting-Postman-to-Choreo)
-   * [Generate a Postman API Key](#Generate-a-Postman-API-Key)
-   * [Saving Postman Key in Choreo](#Saving-Postman-Key-in-Choreo)
-   * [Create and Link a Workspace](#Create-and-Link-a-Workspace)
-   * [Create a Collection](#Create-a-Collection)
-   * [Create a Request](#Create-a-Request)
+- [Introduction](#Introduction)
+- [Prerequisites](#Prerequisites)
+- [Choreo Postman Editor](#Choreo-Postman-Editor)
+  - [Getting Started](#Getting-Started)
+  - [Create or Open an Existing Application](#Create-or-Open-an-Existing-Application)
+    - [Connecting Postman to Choreo](#Connecting-Postman-to-Choreo)
+    - [Generate a Postman API Key](#Generate-a-Postman-API-Key)
+    - [Saving Postman Key in Choreo](#Saving-Postman-Key-in-Choreo)
+    - [Create and Link a Workspace](#Create-and-Link-a-Workspace)
+    - [Create a Collection](#Create-a-Collection)
+    - [Create a Request](#Create-a-Request)
 
 <!--te-->
 
