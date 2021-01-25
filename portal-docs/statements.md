@@ -56,7 +56,7 @@ You can use the for-each iteration statement when you want to traverses through 
 
 ### Respond statement
 
-You can use the respond statement when you want the Choreo application to send a response back to its client. For example, to get an API to respond with a HTTP_OK indicating that the request was processed successfully.
+You can use the respond statement when you want the Choreo application to send a response back to its client. For example, to get an API to respond with a `HTTP_OK` indicating that the request was processed successfully.
 
 ![](images/statements/respond.png)
 
@@ -65,5 +65,4 @@ You can use the respond statement when you want the Choreo application to send a
 You can use the return statement to end the ongoing execution of a Choreo application.
 
 ![](images/statements/return.png)
-
 
