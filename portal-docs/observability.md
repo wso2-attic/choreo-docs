@@ -8,6 +8,8 @@
 * [Observe Application Metrics](#Observe-Application-Metrics)
 * [Tracing Requests](#Tracing-Requests)
 * [View Logs](#View-Logs)
+   * [Correlate logs with throughput and latency graphs](#correlate-logs-with-throughput-and-latency-graphs)
+   * [View/Filter logs of the entire application](#viewfilter-logs-of-the-entire-application)
 * [Root Cause Analysis](#Root-Cause-Analysis)
    * [Flame Graph](#Flame-Graph)
    * [What’s next?](#What’s-next?)
