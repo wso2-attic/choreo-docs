@@ -32,12 +32,13 @@ Second, you will find an observe button on the left side of your application pag
 
 Once you reach the observability page, you will see a screen similar to the following. You use the view to
 
-1- Observe application metrics  
-2- Tracing requests  
-3- View low-code diagram along with observations
-4- View Logs  
-5- Navigate to the logs view  
-6- Navigate to the root cause analysis view  
+1. Observe application metrics  
+2. Tracing requests  
+3. View low-code diagram along with observations
+4. View Logs  
+5. Navigate to the logs view  
+6. Navigate to the root cause analysis view  
+
 Within a single screen as annotated below.
 
 ![Step 3](images/observability/image5.png)
@@ -50,11 +51,11 @@ We will discuss each of them below.
 
 You will see the options bar at the top of the observability page. There, by changing the values provided by the dropdown menus, certain configurations could be changed as follows.
 
-1- Change the resource, remote function or function you need to observe
-2- Change the time window of throughput and latency graphs  
-3- Change the timezone of throughput, latency graphs, and the logs view
-4- Change the refresh interval  
-5- Turn sharing on/off  
+1. Change the resource, remote function or function you need to observe
+2. Change the time window of throughput and latency graphs  
+3. Change the timezone of throughput, latency graphs, and the logs view
+4. Change the refresh interval  
+5. Turn sharing on/off  
 
 ![Step 1](images/observability/image1.png)
 
@@ -89,13 +90,13 @@ Furthermore, the low-code diagram will display the average latency and the succe
 
 ## View Logs
 
-1- Correlate logs with throughput and latency graphs
+### Correlate logs with throughput and latency graphs
 
 Let's say you identified a high latency in the latency graph and you want to see the corresponding log entries for the timestamp of that particular latency. What you have to do is, just click on the timestamp that you are interested in on the latency or throughput graph. The relevant log entries will appear in the Logs panel situated right underneath the two graphs.
 
 ![Step 1](images/observability/image11.png)
 
-2- View/Filter logs of the entire application
+### View/Filter logs of the entire application
 
 In case you want to find all the logs in your application, you can visit the logs panel by clicking on the logs button at the top left side of the observability page. There, you can easily filter the logs for a given duration using the dropdown menus provided in the Options Bar. Furthermore, you can quickly filter logs based on a certain log phrase by simply providing it in the Contains search box.
 
