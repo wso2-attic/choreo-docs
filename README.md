@@ -3,19 +3,19 @@ Choreo is a platform that helps developers to rapidly develop, operate, and evol
 
 ### Learn more about Choreo by exploring the below topics
 
-[1. About Choreo](introduction-to-choreo.md)
+[1. About Choreo](portal-docs/introduction-to-choreo.md)
 
-[2. Application Triggers](trigger.md)
+[2. Application Triggers](portal-docs/trigger.md)
 
-[3. Relative Path from Host](path.md)
+[3. Relative Path from Host](portal-docs/path.md)
 
-[4. APIs / Connectors](connector.md)
+[4. APIs / Connectors](portal-docs/connector.md)
 
 5. Statements
 
-[6. Using the Expression Editor](expression-editor.md)
+[6. Using the Expression Editor](portal-docs/expression-editor.md)
 
-[7. Test View](test.md)
+[7. Test View](portal-docs/test.md)
 
-[8. Observability](observability.md)
+[8. Observability](portal-docs/observability.md)
 
