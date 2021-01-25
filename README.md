@@ -1,7 +1,7 @@
 # Welcome to Choreo !
 Choreo is a platform that helps developers to rapidly develop, operate, and evolve cloud-native enterprise applications while taming the complexity.
 
-### Learn more about Choreo by exploring the below topics
+### Explore the topics given below to learn more about Choreo
 
 [1. About Choreo](portal-docs/introduction-to-choreo.md)
 
@@ -18,4 +18,3 @@ Choreo is a platform that helps developers to rapidly develop, operate, and evol
 [7. Test View](portal-docs/test.md)
 
 [8. Observability](portal-docs/observability.md)
-
