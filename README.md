@@ -11,7 +11,7 @@ Choreo is a platform that helps developers to rapidly develop, operate, and evol
 
 [4. APIs / Connectors](portal-docs/connector.md)
 
-5. Statements
+[5. Statements](portal-docs/statements.md)
 
 [6. Use the Expression Editor](portal-docs/expression-editor.md)
 
