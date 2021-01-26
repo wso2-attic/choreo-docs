@@ -6,11 +6,11 @@
 * [Navigate to the Observability Page](#Navigate-to-the-Observability-Page)
   * [Options bar in observability view](#Options-bar-in-observability-view)
 * [Observe Application Metrics](#Observe-Application-Metrics)
-* [Tracing Requests](#Tracing-Requests)
+* [Trace Requests](#Trace-Requests)
 * [View Logs](#View-Logs)
-   * [Correlate logs with throughput and latency graphs](#correlate-logs-with-throughput-and-latency-graphs)
-   * [View/Filter logs of the entire application](#viewfilter-logs-of-the-entire-application)
-* [Root Cause Analysis](#Root-Cause-Analysis)
+   * [Correlate Logs with Throughput and Latency Graphs](#correlate-logs-with-throughput-and-latency-graphs)
+   * [View/Filter Logs of the Entire Application](#viewfilter-logs-of-the-entire-application)
+* [Perform Root Cause Analysis](#perform-root-cause-analysis)
    * [Flame Graph](#Flame-Graph)
    * [What’s next?](#What’s-next?)
 
@@ -34,12 +34,12 @@ Second, you will find an observe button on the left side of your application pag
 
 Once you reach the observability page, you will see a screen similar to the following. You use the view to
 
-1. Observe application metrics  
-2. Tracing requests  
-3. View low-code diagram along with observations
-4. View Logs  
-5. Navigate to the logs view  
-6. Navigate to the root cause analysis view  
+- Observe application metrics  
+- Tracing requests  
+- View low-code diagram along with observations
+- View Logs  
+- Navigate to the logs view  
+- Navigate to the root cause analysis view  
 
 Within a single screen as annotated below.
 
@@ -53,12 +53,12 @@ We will discuss each of them below.
 
 You will see the options bar at the top of the observability page. There, by changing the values provided by the dropdown menus, certain configurations could be changed as follows.
 
-1. Change the resource, remote function or function you need to observe
-2. Change the time window of throughput and latency graphs  
-3. Change the timezone of throughput, latency graphs, and the logs view
-4. Change the refresh interval  
-5. Turn sharing on/off  
-
+- Change the resource, remote function or function you need to observe
+- Change the time window of throughput and latency graphs  
+- Change the timezone of throughput, latency graphs, and the logs view
+- Change the refresh interval  
+- Turn sharing on/off  
+ 
 ![Step 1](images/observability/image1.png)
 
 By default your observability view is private, and therefore is only visible to the application owner. But if you want to share it with others, you can simply toggle the share off switch and share the link.
@@ -80,7 +80,7 @@ When you change the time window, the unit of the y-axis of the throughput graph 
 | Service          | Requests received for a unit time   | Time taken to complete a request   |
 | Function         | Executions performed in a unit time | Time taken to perform an execution |
 
-## Tracing Requests
+## Trace Requests
 
 You can trace the requests received by your application at a given timestamp by selecting the desired time in the time axis of either the throughput or the latency graph. It will show the received requests along with the request time, latency, and the status. You will even be able to view the status code and the latency for the http connector of a single request, when you click on a particular request.
 
@@ -92,13 +92,13 @@ Furthermore, the low-code diagram will display the average latency and the succe
 
 ## View Logs
 
-### Correlate logs with throughput and latency graphs
+### Correlate Logs with Throughput and Latency Graphs
 
 Let's say you identified a high latency in the latency graph and you want to see the corresponding log entries for the timestamp of that particular latency. What you have to do is, just click on the timestamp that you are interested in on the latency or throughput graph. The relevant log entries will appear in the Logs panel situated right underneath the two graphs.
 
 ![Step 1](images/observability/image11.png)
 
-### View/Filter logs of the entire application
+### View/Filter Logs of the Entire Application
 
 In case you want to find all the logs in your application, you can visit the logs panel by clicking on the logs button at the top left side of the observability page. There, you can easily filter the logs for a given duration using the dropdown menus provided in the Options Bar. Furthermore, you can quickly filter logs based on a certain log phrase by simply providing it in the Contains search box.
 
@@ -106,7 +106,7 @@ In case you want to find all the logs in your application, you can visit the log
 
 You can also download the log entries using the download button and it will save the log entries as a .txt file in your machine.
 
-## Root Cause Analysis
+## Perform Root Cause Analysis
 
 Root cause analysis view provides everything that you need to debug your application in a single place. It is a very simple but powerful view to find the root cause of a problem in a few seconds. 
 

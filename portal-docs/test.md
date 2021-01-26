@@ -6,11 +6,11 @@
 - [Introduction](#Introduction)
 - [Prerequisites](#Prerequisites)
 - [Choreo Postman Editor](#Choreo-Postman-Editor)
-  - [Getting Started](#Getting-Started)
+  - [Get Started](#Get-Started)
   - [Create or Open an Existing Application](#Create-or-Open-an-Existing-Application)
-    - [Connecting Postman to Choreo](#Connecting-Postman-to-Choreo)
+    - [Connect Postman to Choreo](#Connect-Postman-to-Choreo)
     - [Generate a Postman API Key](#Generate-a-Postman-API-Key)
-    - [Saving Postman Key in Choreo](#Saving-Postman-Key-in-Choreo)
+    - [Save Postman Key in Choreo](#Save-Postman-Key-in-Choreo)
     - [Create and Link a Workspace](#Create-and-Link-a-Workspace)
     - [Create a Collection](#Create-a-Collection)
     - [Create a Request](#Create-a-Request)
@@ -35,12 +35,12 @@ All requests/collections/workspaces created will immediately be visible in your 
 
 Note: you need to send requests to Choreo application using the Postman agent.
 
-### Getting Started
+### Get Started
 
 ### Create or Open an Existing Application
 Log into the Choreo console and create an application. To create an application, follow our application creation guide.
 
-### Connecting Postman to Choreo
+### Connect Postman to Choreo
 
 ### Generate a Postman API Key
 
@@ -58,7 +58,7 @@ Log into the Choreo console and create an application. To create an application,
 
 ![Step 4](images/test/image2.png)
 
-### Saving Postman Key in Choreo
+### Save Postman Key in Choreo
 
 1- Go to the test view of the Choreo console by clicking on the test view tab.
 
