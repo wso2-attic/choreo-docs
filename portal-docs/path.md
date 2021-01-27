@@ -9,7 +9,6 @@
   * [2-Single path](#2-Single-path)
   * [3-Multiple path Strings](#3-Multiple-path-Strings) 
   * [4-Path Parameters](#4-Path-Parameters)
-  * [5-Query Parameters](#5-Query-Parameters)
 
 <!--te-->
 
@@ -58,7 +57,6 @@ Trigger URL: https://sample-username.choreoapps.dev/8/monday
 
 This allows you to read the value of date; “8” and day; “Monday” within your Choreo application
 
-### 5-Query Parameters
 
 
 
