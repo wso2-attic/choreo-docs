@@ -12,7 +12,7 @@ Choreo is a platform that helps developers to rapidly develop, operate, and evol
 
 - Even without expert-level coding skills, Choreo's low-code environment enables developers to easily build applications. It also provides capabilities to collaborate and improve these applications as needed.  
 
-- The low-code application development platform auto-generates editable and version-controlled code and maintains these in Git. This enables applying the engineering rigor required for enterprise applications on low-code. Thus with Choreo, the battle-proven software development lifecycle (SLDC) works like before. In contrast, SLDC does not work with many other low-code tools. 
+- The low-code application development platform auto-generates editable and version-controlled code and maintains these in Git. This enables applying the engineering rigor required for enterprise applications on low-code. Thus with Choreo, the battle-proven software development lifecycle (SDLC) works like before. In contrast, SDLC does not work with many other low-code tools. 
 
 - Choreo consists of deployment environments (Dev, Staging, Prod), CI/CD pipelines, and automation tests. It empowers developers to follow cloud-native deployment practices.
 
