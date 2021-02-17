@@ -84,14 +84,12 @@ WSO2 acknowledges your right to access your data. If information pertaining to y
 You can also ask us to stop using all or some of your personal data (e.g., if we have no legal right to keep using it), or to limit our use of it (e.g., if your personal data is inaccurate or unlawfully held).
 You may also choose to delete your data from our website or service at any time and unsubscribe from any Choreo mailing lists you are on. To unsubscribe from our emails, you can click on the unsubscribe link at the bottom of any marketing email we send. You can click on your account within the Choreo user portal, which will allow you to perform certain functions like deleting your account. You can also reach out to us via <dpo@wso2.com> for assistance on any of the above requests.
 
- 
 We only ever retain your personal data after you have ceased using our services, or sent us a request to unsubscribe or delete your data if it is reasonably necessary to comply with our legal obligations (including law enforcement requests), meet regulatory requirements, resolve disputes, maintain security, prevent fraud and abuse, or fulfill your request to unsubscribe from further messages from us.
 
 
 ## Third party offerings and services
 
 When you choose to integrate certain functionalities with sites or applications outside of WSO2, you are bound by the terms of the particular site or application. 
-
   
 ## Changes to our privacy policy
 
