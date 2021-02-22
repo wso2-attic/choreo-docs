@@ -1,40 +1,53 @@
 <template>
-  <div
-    class="sidebar-button"
-    @click="$emit('toggle-sidebar')"
-  >
-    <svg
-      class="icon"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-      role="img"
-      viewBox="0 0 448 512"
-    >
-      <path
-        fill="currentColor"
-        d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
-        class=""
-      />
-    </svg>
-  </div>
+  <button class="sidebar-button" @click="$emit('toggle-sidebar')">
+    <span class="icon" />
+  </button>
 </template>
 
 <style lang="stylus">
 .sidebar-button
-  cursor pointer
   display none
+  box-sizing content-box
+  position absolute
+  top calc(50% - 1.075rem)
+  left 1rem
   width 1.25rem
   height 1.25rem
-  position absolute
-  padding 0.6rem
-  top 0.6rem
-  left 1rem
-  .icon
-    display block
-    width 1.25rem
-    height 1.25rem
+  padding 0.45rem
+  font unset
+  vertical-align middle
+  transition transform 0.2s ease-in-out
 
-@media (max-width: $MQMobile)
+  &::before
+    content ' '
+    margin-top 0.125em
+
+  &::after
+    content ' '
+    margin-bottom 0.125em
+
+  .icon
+    margin 0.2em 0
+
+  &::before, &::after, .icon
+    display block
+    width 100%
+    height 0.2em
+    transition transform 0.2s ease-in-out
+    border-radius 0.05em
+    background var(--text-color)
+
+.sidebar-open .sidebar-button
+  &::before
+    transform translateY(0.4em) rotate(135deg)
+
+  .icon
+    transform scale(0)
+
+  &::after
+    transform translateY(-0.4em) rotate(-135deg)
+
+@media (max-width $MQMobile)
   .sidebar-button
     display block
 </style>

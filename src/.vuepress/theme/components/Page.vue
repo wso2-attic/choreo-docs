@@ -1,43 +1,83 @@
 <template>
-  <body class="page">
+  <main class="page">
+    <MyTransition>
+      <BreadCrumb :key="$route.path" />
+      <AlgoliaSearchBox v-if="isAlgoliaSearch" :options="algoliaConfig" />
+      <SearchBox
+        v-else-if="
+          $themeConfig.search !== false && $page.frontmatter.search !== false
+        "
+      />
+    </MyTransition>
+
     <slot name="top" />
-    <SearchBox> </SearchBox>
-    <Content class="theme-default-content" >
-    </Content>
 
-    <PageEdit />
+    <MyTransition v-if="commentEnable" :delay="0.04">
+      <PageInfo :key="$route.path" />
+    </MyTransition>
 
+    <MyTransition :delay="0.08">
+      <Password
+        v-if="pagePassword && !pageDescrypted"
+        :key="$route.path"
+        :page="true"
+        @password-verify="password = $event"
+      />
+    </MyTransition>
+
+    <MyTransition v-if="!pagePassword || pageDescrypted" :delay="0.12">
+      <Anchor :key="$route.path" :header="headers" />
+    </MyTransition>
+
+    <MyTransition v-show="!pagePassword || pageDescrypted" :delay="0.08">
+      <Content :key="$route.path" class="theme-default-content" />
+    </MyTransition>
+
+    <MyTransition v-if="!pagePassword || pageDescrypted" :delay="0.12">
+      <PageEdit :key="$route.path" />
+    </MyTransition>
+
+    <MyTransition v-if="!pagePassword || pageDescrypted" :delay="0.14">
+      <PageNav :key="$route.path" v-bind="{ sidebarItems }" />
+    </MyTransition>
+
+    <MyTransition
+      v-if="(!pagePassword || pageDescrypted) && commentEnable"
+      :delay="0.16"
+    >
+      <Comment :key="$route.path" />
+    </MyTransition>
 
     <slot name="bottom" />
-  </body>
+  </main>
 </template>
 
-<script>
-import PageEdit from '@theme/components/PageEdit.vue'
-import PageNav from '@theme/components/PageNav.vue'
-import SearchBox from '@SearchBox'
-
-
-export default {
-  name: 'Page',
-
-  components: { PageEdit, PageNav, SearchBox},
-  props: ['sidebarItems']
-}
-</script>
+<script src="./Page" />
 
 <style lang="stylus">
-@require '../styles/wrapper.styl'
-
 .page
-  padding-bottom 2rem
-  padding-top 3.6rem !important
   display block
-.search-box
-  flex 0 0 auto
-  width 100% !important
-  text-align right
-  max-width 100%
-  top 3.6rem !important
+  box-sizing border-box
+  min-height 100vh
+  padding-bottom 2rem
+  background var(--bgcolor)
 
+  @media (max-width $MQMobile)
+    min-height 100vh
+
+  // narrow desktop / iPad
+  @media (max-width $MQNarrow)
+    padding-left $mobileSidebarWidth
+
+  @media (min-width ($MQMobile + 1px))
+    .theme-container:not(.has-sidebar) &
+      padding-left 0
+
+  // wide mobile
+  @media (max-width $MQMobile)
+    padding-left 0
+
+  @media (min-width $MQWide)
+    .has-anchor &
+      padding-right 16rem
 </style>

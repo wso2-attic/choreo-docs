@@ -1,159 +1,273 @@
 <template>
-  <div
-    class="theme-container"
-    :class="pageClasses"
-    @touchstart="onTouchStart"
-    @touchend="onTouchEnd"
+  <main
+    :aria-labelledby="$frontmatter.heroText !== null ? 'main-title' : null"
+    class="home"
   >
-    <Navbar
-      v-if="shouldShowNavbar"
-      @toggle-sidebar="toggleSidebar"
-    />
+    <header class="hero">
+      <MyTransition>
+        <img
+          v-if="$frontmatter.heroImage"
+          key="light"
+          :class="{ light: Boolean($frontmatter.darkHeroImage) }"
+          :src="$withBase($frontmatter.heroImage)"
+          :alt="$frontmatter.heroAlt || 'HomeLogo'"
+        />
+        <img
+          v-if="$frontmatter.darkHeroImage"
+          key="dark"
+          class="dark"
+          :src="$withBase($frontmatter.darkHeroImage)"
+          :alt="$frontmatter.heroAlt || 'HomeLogo'"
+        />
+      </MyTransition>
+      <div class="hero-info">
+        <MyTransition :delay="0.04">
+          <h1
+            v-if="$frontmatter.heroText !== false"
+            id="main-title"
+            v-text="$frontmatter.heroText || $title || 'Hello'"
+          />
+        </MyTransition>
+        <MyTransition :delay="0.08">
+          <p
+            class="description"
+            v-text="
+              $frontmatter.tagline ||
+              $description ||
+              'Welcome to your VuePress site'
+            "
+          />
+        </MyTransition>
+        <MyTransition :delay="0.12">
+          <p v-if="$frontmatter.action" class="action">
+            <NavLink
+              v-for="action in actionLinks"
+              :key="action.text"
+              :item="action"
+              class="action-button"
+              :class="action.type || ''"
+            />
+          </p>
+        </MyTransition>
+      </div>
+    </header>
 
-    <div
-      class="sidebar-mask"
-      @click="toggleSidebar(false)"
-    />
+    <MyTransition :delay="0.16">
+      <div
+        v-if="$frontmatter.features && $frontmatter.features.length"
+        class="features"
+      >
+        <div
+          v-for="(feature, index) in $frontmatter.features"
+          :key="index"
+          :class="{ link: feature.link, [`feature${index % 9}`]: true }"
+          class="feature"
+          @click="feature.link ? navigate(feature.link) : ''"
+        >
+          <h2>{{ feature.title }}</h2>
+          <p>{{ feature.details }}</p>
+        </div>
+      </div>
+    </MyTransition>
 
-    <Sidebar
-      :items="sidebarItems"
-      @toggle-sidebar="toggleSidebar"
-    >
-      <template #top>
-        <slot name="sidebar-top" />
-      </template>
-      <template #bottom>
-        <slot name="sidebar-bottom" />
-      </template>
-    </Sidebar>
-
-    <Home v-if="$page.frontmatter.home" />
-
-    <Page
-      v-else
-      :sidebar-items="sidebarItems"
-    >
-      <template #top>
-        <slot name="page-top" />
-      </template>
-      <template #bottom>
-        <slot name="page-bottom" />
-      </template>
-    </Page>
-  
-  </div>
+    <MyTransition :delay="0.24">
+      <Content class="theme-default-content custom" />
+    </MyTransition>
+  </main>
 </template>
 
-<script>
-import Home from '@theme/components/Home.vue'
-import Navbar from '@theme/components/Navbar.vue'
-import Page from '@theme/components/Page.vue'
-import Sidebar from '@theme/components/Sidebar.vue'
-import PageSidebar from '@theme/components/PageSidebar.vue'
-import { resolveSidebarItems } from '../util'
-import AlgoliaSearchBox from '@theme/components/AlgoliaSearchBox.vue'
-import SearchBox from '@SearchBox'
+<script src="./Home" />
 
+<style lang="stylus">
+.home
+  display block
+  max-width $homePageWidth
+  min-height 100vh - $navbarHeight
+  padding $navbarHeight 2rem 0
+  margin 0px auto
 
-export default {
-  name: 'Layout',
+  @media (max-width $MQNarrow)
+    min-height 100vh - $navbarMobileHeight
+    padding-top $navbarMobileHeight
 
-  components: {
-    Home,
-    Page,
-    Sidebar,
-    PageSidebar,
-    Navbar,
-    SearchBox,
-    AlgoliaSearchBox
-  },
+  @media (max-width $MQMobileNarrow)
+    padding-left 1.5rem
+    padding-right 1.5rem
 
-  data () {
-    return {
-      isSidebarOpen: true
-    }
-  },
+  .hero
+    text-align center
 
-  computed: {
-    shouldShowNavbar () {
-      const { themeConfig } = this.$site
-      const { frontmatter } = this.$page
-      if (
-        frontmatter.navbar === false
-        || themeConfig.navbar === false) {
-        return false
-      }
-      return (
-        this.$title
-        || themeConfig.logo
-        || themeConfig.repo
-        || themeConfig.nav
-        || this.$themeLocaleConfig.nav
-      )
-    },
+    @media (min-width $MQNarrow)
+      display flex
+      justify-content space-evenly
+      align-items center
+      text-align left
 
-    shouldShowSidebar () {
-      const { frontmatter } = this.$page
-      return (
-        !frontmatter.home
-        && frontmatter.sidebar !== false
-        && this.sidebarItems.length
-      )
-    },
+    img
+      display block
+      max-width 100%
+      max-height 320px
+      margin 0
 
-    sidebarItems () {
-      return resolveSidebarItems(
-        this.$page,
-        this.$page.regularPath,
-        this.$site,
-        this.$localePath
-      )
-    },
+      @media (max-width $MQNarrow)
+        max-height 280px
+        margin 3rem auto 1.5rem
 
-    pageClasses () {
-      const userPageClass = this.$page.frontmatter.pageClass
-      return [
-        {
-          'no-navbar': !this.shouldShowNavbar,
-          'sidebar-open': this.isSidebarOpen,
-          'no-sidebar': !this.shouldShowSidebar
-        },
-        userPageClass
-      ]
-    }
-  },
+      @media (max-width $MQMobile)
+        max-height 240px
+        margin 2rem auto 1.2rem
 
-  mounted () {
-    this.$router.afterEach(() => {
-      this.isSidebarOpen = false
-    })
-  },
+      @media (max-width $MQMobileNarrow)
+        max-height 210px
+        margin 1.5rem auto 1rem
 
-  methods: {
-    toggleSidebar (to) {
-      this.isSidebarOpen = typeof to === 'boolean' ? to : !this.isSidebarOpen
-      this.$emit('toggle-sidebar', this.isSidebarOpen)
-    },
+      .theme-light &
+        &.light
+          display block
 
-    // side swipe
-    onTouchStart (e) {
-      this.touchStart = {
-        x: e.changedTouches[0].clientX,
-        y: e.changedTouches[0].clientY
-      }
-    },
+        &.dark
+          display none
 
-    onTouchEnd (e) {
-      const dx = e.changedTouches[0].clientX - this.touchStart.x
-      const dy = e.changedTouches[0].clientY - this.touchStart.y
-      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
-        if (dx > 0 && this.touchStart.x <= 80) {
-          this.toggleSidebar(true)
-        } else {
-          this.toggleSidebar(false)
-        }
-      }
-    }
-  }
-}
-</script>
+      .theme-dark &
+        &.light
+          display none
+
+        &.dark
+          display block
+
+    h1
+      font-size 3rem
+
+      @media (max-width $MQMobile)
+        font-size 2.5rem
+
+      @media (max-width $MQMobileNarrow)
+        font-size 2rem
+
+    h1, .description, .action
+      margin 1.8rem auto
+
+      @media (max-width $MQMobile)
+        margin 1.5rem auto
+
+      @media (max-width $MQMobileNarrow)
+        margin 1.2rem auto
+
+    .description
+      max-width 35rem
+      color var(--text-color-l40)
+      font-size 1.6rem
+      line-height 1.3
+
+      @media (max-width $MQMobile)
+        font-size 1.4rem
+
+      @media (max-width $MQMobileNarrow)
+        font-size 1.2rem
+
+    .action-button
+      display inline-block
+      margin 0.6rem 0.8rem
+      padding 1rem 1.5rem
+      border 2px solid var(--accent-color)
+      border-radius 2rem
+      color var(--accent-color)
+      font-size 1.2rem
+      transition background 0.1s ease
+      overflow hidden
+
+      @media (max-width $MQMobile)
+        padding 0.8rem 1.2rem
+        font-size 1.1rem
+
+      @media (max-width $MQMobileNarrow)
+        padding 0.6rem 1rem
+        font-size 1rem
+
+      &:hover
+        color var(--white)
+        background-color var(--accent-color)
+
+      &.primary
+        color var(--white)
+        background-color var(--accent-color)
+
+        &:hover
+          border-color var(--accent-color-l10)
+          background-color var(--accent-color-l10)
+
+        .theme-dark &
+          &:hover
+            border-color var(--accent-color-d10)
+            background-color var(--accent-color-d10)
+
+  .features
+    display flex
+    flex-wrap wrap
+    justify-content center
+    align-items stretch
+    align-content stretch
+    margin 0 -2rem
+    padding 1.2rem 0
+    border-top 1px solid $borderColor
+
+    @media (max-width $MQMobileNarrow)
+      margin 0 -1.5rem
+
+    .feature
+      display flex
+      flex-direction column
+      justify-content center
+      flex-basis calc(33% - 4rem)
+      margin 0.5rem
+      padding 0 1.5rem
+      border-radius 0.5rem
+      transition transform 0.3s, box-shadow 0.3s
+      overflow hidden
+
+      @media (max-width $MQNarrow)
+        flex-basis calc(50% - 4rem)
+
+      @media (max-width $MQMobile)
+        font-size 0.95rem
+
+      @media (max-width $MQMobileNarrow)
+        flex-basis calc(100%)
+        font-size 0.9rem
+        margin 0.5rem 0
+        border-radius 0
+
+      &.link
+        cursor pointer
+
+      &:hover
+        transform scale(1.05)
+        box-shadow 0 2px 12px 0 var(--card-shadow-color)
+
+      h2
+        margin-bottom 0.25rem
+        border-bottom none
+        color var(--text-color-l10)
+        font-size 1.25rem
+        font-weight 500
+
+        @media (max-width $MQMobileNarrow)
+          font-size 1.2rem
+
+      p
+        margin-top 0
+        color var(--text-color-l25)
+
+  {$contentClass}
+    padding-bottom 1.5rem
+
+@require '~@mr-hope/vuepress-shared/styles/colors.styl'
+
+for $color, $index in $colors
+  .home .features .feature{$index}
+    &, .theme-light &
+      background lighten($color, 90%)
+
+    .theme-dark &
+      background darken($color, 75%)
+</style>

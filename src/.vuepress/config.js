@@ -1,6 +1,7 @@
+const { config } = require("vuepress-theme-hope");
 const { description } = require('../../package')
 
-module.exports = {
+module.exports = config({
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
@@ -32,19 +33,39 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
-    navbar: true,
+    Navbar: true,
     logo: '/assets/img/choreo-logo.png',
     sidebar: [
        ['/','Home'],
-       ['','Getting Started'],
-       ['config/', 'Concepts'],
+       {
+        title: 'Getting Started',
+       path: '/gettingstarted/overview',
+       collapsable: true, // optional, defaults to true
+       children: [
+         ['/gettingstarted/overview','Overview'],
+         {
+           title: 'QSG',
+           path: '/gettingstarted/quickstartguide',
+           collapsable: true, // optional, defaults to true
+           children: [
+             {
+               title: 'Test1',
+               path: '/gettingstarted/quickstartguide/test1',
+               collapsable: true, // optional, defaults to true
+               children: [
+                   '/gettingstarted/quickstartguide/test1/test1content','Test1Content']
+              }
+            ]
+         }]  
+         },  
+       ['/concepts/concepts', 'Concepts'],
        {
          title: 'Tutorials',   // required
-         path: '/tutorials/',      // optional, link of the title, which should be an absolute path and must exist
+         path: '/tutorials/create-a-REST-api',      // optional, link of the title, which should be an absolute path and must exist
          collapsable: true, // optional, defaults to true
          sidebarDepth: 2,    // optional, defaults to 1
          children: [
-           ['','Create REST API'],
+           ['/tutorials/create-a-REST-api','Create REST API'],
            ['','Create a GraphQL API']
          ]
        },
@@ -62,4 +83,4 @@ module.exports = {
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
   ]
-}
+});
