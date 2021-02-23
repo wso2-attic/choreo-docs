@@ -39,35 +39,45 @@ module.exports = config({
        ['/','Home'],
        {
         title: 'Getting Started',
-       path: '/gettingstarted/overview',
+       path: '/getting-started/overview',
        collapsable: true, // optional, defaults to true
        children: [
-         ['/gettingstarted/overview','Overview'],
-         {
-           title: 'QSG',
-           path: '/gettingstarted/quickstartguide',
+         ['/getting-started/introduction-to-choreo', 'Introduction to Choreo'],
+         ['/getting-started/overview','Overview'],
+         ['/getting-started/quick-start-guide', 'Quick Start Guide']
+       ]
+      },
+      {
+         title: 'Concepts',   // required
+         collapsable: true, // optional, defaults to true
+         children: ['/concepts/develop/trigger',
+          {
+           title: 'Develop',
            collapsable: true, // optional, defaults to true
            children: [
-             {
-               title: 'Test1',
-               path: '/gettingstarted/quickstartguide/test1',
-               collapsable: true, // optional, defaults to true
-               children: [
-                   '/gettingstarted/quickstartguide/test1/test1content','Test1Content']
-              }
-            ]
-         }]  
-         },  
-       ['/concepts/concepts', 'Concepts'],
-       {
-         title: 'Tutorials',   // required
-         path: '/tutorials/create-a-REST-api',      // optional, link of the title, which should be an absolute path and must exist
-         collapsable: true, // optional, defaults to true
-         sidebarDepth: 2,    // optional, defaults to 1
-         children: [
+             ['/concepts/develop/connector', 'Connector'],
+             ['/concepts/develop/expression-editor', 'Expression Editor'],
+             ['/concepts/develop/path', 'Path'],
+             ['/concepts/develop/statements', 'Statements'],
+             ['/concepts/develop/trigger', 'Trigger']
+           ]
+          },
+          ['/concepts/observe/observability',{
+          title: 'Observe',
+           children: [
+             ['/concepts/observe/observability', 'Observability']
+           ]
+          }]]
+        },    
+          {
+            title: 'Tutorials',   // required
+            path: '/tutorials/create-a-REST-api',      // optional, link of the title, which should be an absolute path and must exist
+            collapsable: true, // optional, defaults to true
+            sidebarDepth: 2,    // optional, defaults to 1
+            children: [
            ['/tutorials/create-a-REST-api','Create REST API'],
            ['','Create a GraphQL API']
-         ]
+         ]        
        },
        ['','Videos'],
        ['','References'],

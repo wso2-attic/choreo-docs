@@ -2,13 +2,7 @@
   <main class="page">
     <MyTransition>
       <BreadCrumb :key="$route.path" />
-      <AlgoliaSearchBox v-if="isAlgoliaSearch" :options="algoliaConfig" />
-      <SearchBox
-        v-else-if="
-          $themeConfig.search !== false && $page.frontmatter.search !== false
-        "
-      />
-    </MyTransition>
+          </MyTransition>
 
     <slot name="top" />
 
