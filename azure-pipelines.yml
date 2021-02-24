@@ -16,6 +16,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    pwd
     npm run  docs:build
     sudo chmod 777 -R src/.vuepress/dist
     cd src/.vuepress/dist
