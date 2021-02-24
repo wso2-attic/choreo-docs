@@ -17,4 +17,38 @@ jobs:
     displayName: 'Build and push docs'
     inputs:
       scriptPath: deploy.sh
-      
+      # Node.js with Vue
+# Build a Node.js project that uses Vue.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- checkout: self
+  persistCredentials: true
+  clean: true
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    pwd
+    ls
+    npm i vuepress
+    npm run docs:build
+    cd src/.vuepress/dist
+    ls
+    
+    git init
+    git add -A
+    git commit -m 'deploy' 
+
+    git push git@github.com:wso2/choreo-docs.git master:gh-pages
+
+  displayName: docs build and publish'
