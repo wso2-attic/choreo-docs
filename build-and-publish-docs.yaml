@@ -1,0 +1,20 @@
+trigger:
+  batch: true
+  branches:
+    include:
+    - master
+
+pr: none
+
+jobs:
+- job: DocsBuildAndPublish
+
+  pool:
+    vmImage: 'ubuntu-latest'
+
+  steps:  
+  - task: ShellScript@2
+    displayName: 'Build and push docs'
+    inputs:
+      scriptPath: deploy.sh
+      
