@@ -20,6 +20,7 @@ steps:
 - script: |
     pwd
     ls
+    npm i vuepress
     npm run docs:build
     cd src/.vuepress/dist
 
