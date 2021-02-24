@@ -920,17 +920,18 @@
     "yallist": "^3.1.1",
     "window-size": "^0.1.4"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wso2/choreo-docs.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
+    "repository": "/choreo-docs",
+    "scripts": {
+      "docs:dev": "vuepress dev src",
+      "docs:build": "vuepress build src"
+    },
+    "license": "MIT",
+    "devDependencies": {
+      "vuepress": "^1.8.0",
+      "vuepress-plugin-add-this": "^1.9.6",
+      "vuepress-theme-hope": "^1.9.6"
+    }, 
+    "bugs": {
     "url": "https://github.com/wso2/choreo-docs/issues"
   },
   "homepage": "https://github.com/wso2/choreo-docs#readme"
