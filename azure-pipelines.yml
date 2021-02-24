@@ -10,6 +10,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- checkout: self
+  persistCredentials: true
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
@@ -18,14 +20,13 @@ steps:
 - script: |
     pwd
     ls
-    npm run  docs:build
-    sudo chmod 777 -R src/.vuepress/dist
+    npm run docs:build
     cd src/.vuepress/dist
 
     git init
     git add -A
     git commit -m 'deploy'
 
-    git push -f git@github.com:wso2/choreo-docs.git  master:gh-pages
+    git push  git@github.com:wso2/choreo-docs.git  master:gh-pages
 
   displayName: docs build and publish'
