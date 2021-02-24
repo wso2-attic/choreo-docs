@@ -17,6 +17,7 @@ steps:
 
 - script: |
     pwd
+    ls
     npm run  docs:build
     sudo chmod 777 -R src/.vuepress/dist
     cd src/.vuepress/dist
