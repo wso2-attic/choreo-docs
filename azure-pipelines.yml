@@ -1,0 +1,29 @@
+# Node.js with Vue
+# Build a Node.js project that uses Vue.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm run  docs:build
+    sudo chmod 777 -R src/.vuepress/dist
+    cd src/.vuepress/dist
+
+    git init
+    git add -A
+    git commit -m 'deploy'
+
+    git push -f git@github.com:wso2/choreo-docs.git  master:gh-pages
+
+  displayName: docs build and publish'
