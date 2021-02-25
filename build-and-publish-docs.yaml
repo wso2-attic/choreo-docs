@@ -21,7 +21,7 @@ steps:
     cp -r src/.vuepress/dist $(Build.ArtifactStagingDirectory) 
     git checkout origin/gh-pages
     
-    # Remove the generated site content
+    # Remove the old site content
     rm -r ./*
     cp -r $(Build.ArtifactStagingDirectory)/dist/* . 
 
