@@ -21,8 +21,9 @@ steps:
     pwd
     ls
     npm ci
-    npm run docs:build
+    npmff run docs:build
     cp -r src/.vuepress/dist $(Build.ArtifactStagingDirectory) 
+    git clean -fd
     git checkout origin/gh-pages
     cp -r $(Build.ArtifactStagingDirectory)/dist/* . 
 
