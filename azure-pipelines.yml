@@ -20,15 +20,17 @@ steps:
 - script: |
     pwd
     ls
-    npm i vuepress
+    npm ci
     npm run docs:build
-    cd src/.vuepress/dist
+    cp -r src/.vuepress/dist $(Build.ArtifactStagingDirectory) 
+    git checkout origin/gh-pages
+    cp -r $(Build.ArtifactStagingDirectory)/dist/* . 
 
     git config --global user.email "choreo-cicd@wso2.com"
     git config --global user.name "Choreo CI Agent"
-    git add -A
-    git commit -m 'deploy'
 
+    git add .
+    git commit -m 'Updating documentation in $(Build.BuildNumber)'
     git push  origin  HEAD:gh-pages
 
   displayName: docs build and publish'
