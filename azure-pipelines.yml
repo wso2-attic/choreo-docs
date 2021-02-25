@@ -18,11 +18,13 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    set -eo pipefail
     pwd
     ls
-    npm ci
+    npmssd ci
     npm run docs:build
     cp -r src/.vuepress/dist $(Build.ArtifactStagingDirectory) 
+    git clean -fd
     git checkout origin/gh-pages
     cp -r $(Build.ArtifactStagingDirectory)/dist/* . 
 
