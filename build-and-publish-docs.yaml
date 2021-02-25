@@ -1,28 +1,4 @@
 trigger:
-  batch: true
-  branches:
-    include:
-    - master
-
-pr: none
-
-jobs:
-- job: DocsBuildAndPublish
-
-  pool:
-    vmImage: 'ubuntu-latest'
-
-  steps:  
-  - task: ShellScript@2
-    displayName: 'Build and push docs'
-    inputs:
-      scriptPath: deploy.sh
-      # Node.js with Vue
-# Build a Node.js project that uses Vue.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-
-trigger:
 - master
 
 pool:
@@ -31,24 +7,27 @@ pool:
 steps:
 - checkout: self
   persistCredentials: true
-  clean: true
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
 - script: |
+    set -eo pipefail
     pwd
     ls
-    npm i vuepress
+    npm ci
     npm run docs:build
-    cd src/.vuepress/dist
-    ls
-    
-    git init
-    git add -A
-    git commit -m 'deploy' 
+    cp -r src/.vuepress/dist $(Build.ArtifactStagingDirectory) 
+    git clean -fd
+    git checkout origin/gh-pages
+    cp -r $(Build.ArtifactStagingDirectory)/dist/* . 
 
-    git push git@github.com:wso2/choreo-docs.git master:gh-pages
+    git config --global user.email "choreo-cicd@wso2.com"
+    git config --global user.name "Choreo CI Agent"
 
-  displayName: docs build and publish'
+    git add .
+    git commit -m 'Updating documentation in $(Build.BuildNumber)'
+    git push  origin  HEAD:gh-pages
+
+  displayName: 'Choreo documentation build and publish'
