@@ -24,10 +24,11 @@ steps:
     npm run docs:build
     cd src/.vuepress/dist
 
-    git init
+    git config --global user.email "choreo-cicd@wso2.com"
+    git config --global user.name "Choreo CI Agent"
     git add -A
     git commit -m 'deploy'
 
-    git push  git@github.com:wso2/choreo-docs.git  master:gh-pages
+    git push  origin  HEAD:gh-pages
 
   displayName: docs build and publish'
