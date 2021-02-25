@@ -4,19 +4,19 @@
   "description": "choreo documentation",
   "main": "index.js",
   "dependencies": {
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-add-this": "^1.9.6",
+    "vuepress-theme-hope": "^1.9.6
   },
-    "repository": "/choreo-docs",
-    "scripts": {
-      "docs:dev": "vuepress dev src",
-      "docs:build": "vuepress build src"
-    },
-    "license": "MIT",
-    "devDependencies": {
-      "vuepress": "^1.8.0",
-      "vuepress-plugin-add-this": "^1.9.6",
-      "vuepress-theme-hope": "^1.9.6"
-    }, 
-    "bugs": {
+  "repository": "/choreo-docs",
+  "scripts": {
+    "docs:dev": "vuepress dev src",
+    "docs:build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "bugs": {
     "url": "https://github.com/wso2/choreo-docs/issues"
   },
   "homepage": "https://github.com/wso2/choreo-docs#readme"
