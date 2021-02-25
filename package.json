@@ -14,8 +14,7 @@
     "docs:build": "vuepress build src"
   },
   "license": "MIT",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "bugs": {
     "url": "https://github.com/wso2/choreo-docs/issues"
   },
