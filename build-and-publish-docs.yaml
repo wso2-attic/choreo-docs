@@ -22,7 +22,7 @@ steps:
     git checkout origin/gh-pages
     
     # Remove the generated site content
-    rm -rf .
+    rm -r ./*
     cp -r $(Build.ArtifactStagingDirectory)/dist/* . 
 
     git config --global user.email "choreo-cicd@wso2.com"
