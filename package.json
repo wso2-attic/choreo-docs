@@ -6,7 +6,7 @@
   "dependencies": {
     "vuepress": "^1.8.2",
     "vuepress-plugin-add-this": "^1.9.6",
-    "vuepress-theme-hope": "^1.9.6
+    "vuepress-theme-hope": "^1.9.6"
   },
   "repository": "/choreo-docs",
   "scripts": {
