@@ -1,6 +1,8 @@
 trigger:
 - master
 
+pr: none
+
 pool:
   vmImage: ubuntu-latest
 
@@ -19,8 +21,10 @@ steps:
     npm ci
     npm run docs:build
     cp -r src/.vuepress/dist $(Build.ArtifactStagingDirectory) 
-    git clean -fd
     git checkout origin/gh-pages
+    
+    # Remove the old site content
+    rm -r ./*
     cp -r $(Build.ArtifactStagingDirectory)/dist/* . 
 
     git config --global user.email "choreo-cicd@wso2.com"
