@@ -1,22 +1,4 @@
-# Choreo Application Triggers
-
-## Table of contents
-<!--ts-->
-
-* [Introduction](#Introduction)
-* [1-API](#1-API)
-  * [Creating an API trigger](#Creating-an-API-trigger)
-* [2-Manual](#2-Manual)
-  * [Creating a Manual trigger](#Creating-a-Manual-trigger)
-* [3-Schedule](3-Schedule)
-  * [Creating a Schedule trigger](#Creating-a-Schedule-trigger)
-* [4-Calendar](#4-Calendar)
-  * [Creating a Calendar trigger](Creating-a-Calendar-trigger)
-* [5-GitHub](#5-GitHub)
-  * [Creating a GitHub trigger](#Creating-a-GitHub-trigger)
-
-<!--te-->
-
+# Choreo Application Trigger
 
 ## Introduction 
 
@@ -28,15 +10,15 @@ Consider the following example scenario.
 
 Choreo applications support the following list of triggers
 
-1-API                                  
-2-Manual   
-3-Schedule  
-4-Calendar  
-5-Github  
+ - API                                  
+ - Manual   
+ - Schedule  
+ - Calendar  
+ - Github  
 
 Once a Choreo application is created, you will be prompted to select the trigger.  
 
-## 1-API
+## API
 
 API trigger allows you to create a Choreo application and expose it as an API endpoint.
 
@@ -44,30 +26,30 @@ Once you create an application with this trigger and deploy it, Choreo will expo
 
 ### Creating an API trigger 
 
-1- Select “API” from the list of triggers after creating a Choreo application.
+1. Select “API” from the list of triggers after creating a Choreo application.
 
-![Step 1](images/trigger/image2.png)
+![Step 1](/assets/img/trigger/image2.png)
 
-2- Select the desired HTTP method, provide a relative path from host and save the configuration
+2. Select the desired HTTP method, provide a relative path from host and save the configuration
 
-![Step 2](images/trigger/image8.png)
+![Step 2](/assets/img/trigger/image8.png)
 
-3- You can now start developing your application by adding statement elements or API elements using the low code editing capabilities of Choreo.
+3. You can now start developing your application by adding statement elements or API elements using the low code editing capabilities of Choreo.
 
-![Step 3](images/trigger/image4.png)
+![Step 3](/assets/img/trigger/image4.png)
 
 
-## 2-Manual 
+## Manual 
 
 ### Creating a Manual trigger 
 
 Manual trigger allows you to create an application that you can trigger manually by clicking the run button.
 
-1- Select Manual from the list of triggers
+1. Select Manual from the list of triggers
 
-![Step 1](images/trigger/image2.png)
+![Step 1](/assets/img/trigger/image2.png)
 
-## 3-Schedule
+## Schedule
 
 A Schedule trigger lets you trigger your Choreo application according to a given schedule. Hence it is used when you need your application run to be triggered based on time. The schedule is defined in the form of a cron expression. 
 
@@ -75,37 +57,37 @@ A cron expression is a string containing subfields separated by white spaces . E
 
 ### Creating a Schedule trigger
 
-1- Select Schedule from the list of triggers
+1. Select Schedule from the list of triggers
 
-![Step 1](images/trigger/image2.png)
+![Step 1](/assets/img/trigger/image2.png)
 
-2-Enter a Cron expression for the schedule and save the configuration
+2. Enter a Cron expression for the schedule and save the configuration
 
-![Step 2](images/trigger/image9.png)
+![Step 2](/assets/img/trigger/image9.png)
 
 
-## 4-Calendar 
+## Calendar 
 
 Calendar trigger lets you trigger a Choreo application based on events in a Google Calendar.
 
 ### Creating a Calendar trigger 
 
-1- Create a Choreo Application
+1. Create a Choreo Application
 
-![Step 1](images/trigger/image3.png)
+![Step 1](/assets/img/trigger/image3.png)
 
-2- Select Calendar from the list of triggers
-![Step 2](images/trigger/image2.png)
+2. Select Calendar from the list of triggers
+![Step 2](/assets/img/trigger/image2.png)
 
-3- If your Choreo account has not yet been connected to Google calendar you will see the following in the Calendar trigger configuration. Click `Connect to Google Calendar` and follow the on screen instructions to proceed.
+3. If your Choreo account has not yet been connected to Google calendar you will see the following in the Calendar trigger configuration. Click `Connect to Google Calendar` and follow the on screen instructions to proceed.
 
-![Step 3](images/trigger/image7.png)
+![Step 3](/assets/img/trigger/image7.png)
 
-4- Once the Google Calendar is connected to your Choreo account, your email address will be displayed. Specify the calendar you would like to associate with the trigger by entering the calendar ID and save the configuration.
+4. Once the Google Calendar is connected to your Choreo account, your email address will be displayed. Specify the calendar you would like to associate with the trigger by entering the calendar ID and save the configuration.
 
-![Step 4](images/trigger/image10.png)
+![Step 4](/assets/img/trigger/image10.png)
 
-## 5-GitHub 
+## GitHub 
 
 GitHub trigger lets you trigger Choreo applications based on GitHub events and actions.
 
@@ -156,16 +138,16 @@ The supported list of events and associated actions are as follows
 
 ### Creating a GitHub trigger
 
-1- Select GitHub from the list of triggers
+1. Select GitHub from the list of triggers
 
-![Step 1](images/trigger/image2.png)
+![Step 1](/assets/img/trigger/image2.png)
 
-2- Select the GitHub event and action. If no GitHub account has been linked, `Connect to GitHub` button is displayed. Click it and follow the onscreen steps to connect to GitHub.
+2. Select the GitHub event and action. If no GitHub account has been linked, `Connect to GitHub` button is displayed. Click it and follow the onscreen steps to connect to GitHub.
 
-![Step 2](images/trigger/image1.png)
+![Step 2](/assets/img/trigger/image1.png)
 
-3- Once the GitHub account is linked, it will be displayed in the GitHub trigger configuration. Provide the URL of the repository which would trigger the Choreo application and Save the configuration.
+3. Once the GitHub account is linked, it will be displayed in the GitHub trigger configuration. Provide the URL of the repository which would trigger the Choreo application and Save the configuration.
 
-![Step 3](images/trigger/image5.png)
+![Step 3](/assets/img/trigger/image5.png)
 
 
