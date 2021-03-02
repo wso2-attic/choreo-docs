@@ -33,23 +33,25 @@ You can use the variable statement to declare a variable. There are two approach
  * Define a variable as **var** type (corresponds to the `var` keyword in Ballerina) followed by the name and an initializer expression. 
  * Select an appropriate variable type from the drop down list.
 
-![](/assets/img//statements/variable.png)
+<img :src="$withBase('/assets/img//statements/variable.png')" alt="" />
+
 
 ### For-each iteration statement
 
 You can use the for-each iteration statement when you want to traverses through items of a collection of data. For example, to traverse through arrays, maps, JSON, XML, and tables. 
 
-![](/assets/img//statements/for-each.png)
+<img :src="$withBase('/assets/img//statements/for-each.png')" alt="" />
 
 ### Respond statement
 
 You can use the respond statement when you want the Choreo application to send a response back to its client. For example, to get an API to respond with a `HTTP_OK` indicating that the request was processed successfully.
 
-![](/assets/img//statements/respond.png)
+<img :src="$withBase('/assets/img//statements/respond.png')" alt="" />
 
 ### Return statement
 
 You can use the return statement to end the ongoing execution of a Choreo application.
 
-![](/assets/img//statements/return.png)
+<img :src="$withBase('/assets/img//statements/return.png')" alt="" />
+
 

@@ -28,16 +28,15 @@ Once you create an application with this trigger and deploy it, Choreo will expo
 
 1. Select “API” from the list of triggers after creating a Choreo application.
 
-![Step 1](/assets/img/trigger/image2.png)
+<img :src="$withBase('/assets/img/trigger/image2.png')" alt="Step 1" />
 
 2. Select the desired HTTP method, provide a relative path from host and save the configuration
 
-![Step 2](/assets/img/trigger/image8.png)
+<img :src="$withBase('/assets/img/trigger/image8.png')" alt="Step 2" />
 
 3. You can now start developing your application by adding statement elements or API elements using the low code editing capabilities of Choreo.
 
-![Step 3](/assets/img/trigger/image4.png)
-
+<img :src="$withBase('/assets/img/trigger/image4.png')" alt="Step 3" />
 
 ## Manual 
 
@@ -47,7 +46,7 @@ Manual trigger allows you to create an application that you can trigger manually
 
 1. Select Manual from the list of triggers
 
-![Step 1](/assets/img/trigger/image2.png)
+<img :src="$withBase('/assets/img/trigger/image2.png')" alt="Step 1" />
 
 ## Schedule
 
@@ -59,11 +58,11 @@ A cron expression is a string containing subfields separated by white spaces . E
 
 1. Select Schedule from the list of triggers
 
-![Step 1](/assets/img/trigger/image2.png)
+<img :src="$withBase('/assets/img/trigger/image2.png')" alt="Step 1" />
 
 2. Enter a Cron expression for the schedule and save the configuration
 
-![Step 2](/assets/img/trigger/image9.png)
+<img :src="$withBase('/assets/img/trigger/image9.png')" alt="Step 2" />
 
 
 ## Calendar 
@@ -74,18 +73,21 @@ Calendar trigger lets you trigger a Choreo application based on events in a Goog
 
 1. Create a Choreo Application
 
-![Step 1](/assets/img/trigger/image3.png)
+<img :src="$withBase('/assets/img/trigger/image3.png')" alt="Step 1" />
 
 2. Select Calendar from the list of triggers
-![Step 2](/assets/img/trigger/image2.png)
+
+
+<img :src="$withBase('/assets/img/trigger/image2.png')" alt="Step 2" />
+
 
 3. If your Choreo account has not yet been connected to Google calendar you will see the following in the Calendar trigger configuration. Click `Connect to Google Calendar` and follow the on screen instructions to proceed.
 
-![Step 3](/assets/img/trigger/image7.png)
+<img :src="$withBase('assets/img/trigger/image7.png')" alt="Step 3" />
 
 4. Once the Google Calendar is connected to your Choreo account, your email address will be displayed. Specify the calendar you would like to associate with the trigger by entering the calendar ID and save the configuration.
 
-![Step 4](/assets/img/trigger/image10.png)
+<img :src="$withBase('/assets/img/trigger/image10.png')" alt="Step 4" />
 
 ## GitHub 
 
@@ -140,14 +142,16 @@ The supported list of events and associated actions are as follows
 
 1. Select GitHub from the list of triggers
 
-![Step 1](/assets/img/trigger/image2.png)
+
+<img :src="$withBase('/assets/img/trigger/image2.png')" alt="Step 1" />
 
 2. Select the GitHub event and action. If no GitHub account has been linked, `Connect to GitHub` button is displayed. Click it and follow the onscreen steps to connect to GitHub.
 
-![Step 2](/assets/img/trigger/image1.png)
+
+<img :src="$withBase('/assets/img/trigger/image1.png')" alt="Step 2" />
 
 3. Once the GitHub account is linked, it will be displayed in the GitHub trigger configuration. Provide the URL of the repository which would trigger the Choreo application and Save the configuration.
 
-![Step 3](/assets/img/trigger/image5.png)
+<img :src="$withBase('/assets/img/trigger/image5.png')" alt="Step 3" />
 
 
