@@ -5,8 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "vuepress": "^1.8.2",
-    "vuepress-plugin-add-this": "^1.9.6",
-    "vuepress-theme-hope": "^1.9.6"
+    "vuepress-plugin-add-this": "^1.11.0",
+    "vuepress-plugin-tabs": "^0.3.0",
+    "vuepress-theme-hope": "^1.11.1"
   },
   "repository": "/choreo-docs",
   "scripts": {

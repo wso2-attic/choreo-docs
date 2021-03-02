@@ -1,34 +1,5 @@
 # Using the Expression Editor
 
-## Table of Contents
-<!--ts-->
-* [Choreo Expression Syntax](#choreo-expression-syntax)
-* [Supported Literals](#supported-literals)
-    * [Strings](#strings)
-    * [Signed Integers](#signed-integers)
-    * [Decimal Floating-Point Numbers](#decimal-floating-point-numbers)
-    * [Boolean Values](#boolean-values)
-* [Accessing Variables](#accessing-variables)
-    * [Using the variable value](#using-the-variable-value)
-* [Supported Operators](#supported-operators)
-    * [String Concatenation](#string-concatenation)
-    * [Number Addition](#number-addition)
-    * [Number Subtraction](#number-subtraction)
-    * [Number Division](#number-division)
-    * [Number Multiplication](#number-multiplication)
-    * [Modulo Operation](#modulo-operation)
-    * [Checking The Equality of Basic Types](#checking-the-equality-of-basic-types)
-    * [Checking the Type of Variable](#checking-the-type-of-variable)
-    * [Numerical Value Comparisons](#numerical-value-comparisons)
-* [HTTP request related operations](#http-request-related-operations)
-    * [Reading a header value in the request](#reading-a-header-value-in-the-request)
-    * [Checking whether a header is present in the request](#checking-whether-a-header-is-present-in-the-request)
-    * [Reading the JSON Payload of the request](#reading-the-json-payload-of-the-request)
-    * [Reading the Text Payload of the request](#reading-the-text-payload-of-the-request)
-    * [Reading the query parameter value](#reading-the-query-parameter-value)
-    * [Reading the cookies available in the request](#reading-the-cookies-available-in-the-request)
-
-<!--te-->
 
 ## Choreo Expression Syntax
 
