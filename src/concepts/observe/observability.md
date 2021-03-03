@@ -10,11 +10,12 @@ You can get to observability in two ways:
 
 First, when you are at the application list (where you go in when you log in), you hover over an app in the App List page, it will show the observe button. Clicking on it will take you to the Choreo Observability page.
 
-![Step 1](/assets/img//observability/image6.png)
+
+<img :src="$withBase('(/assets/img//observability/image6.png')" alt="Step 1" />
 
 Second, you will find an observe button on the left side of your application page which can be used to navigate to the observability page.
 
-![Step 2](/assets/img//observability/image4.png)
+<img :src="$withBase('/assets/img//observability/image4.png')" alt="Step 2" />
 
 Once you reach the observability page, you will see a screen similar to the following. You use the view to
 
@@ -27,7 +28,7 @@ Once you reach the observability page, you will see a screen similar to the foll
 
 Within a single screen as annotated below.
 
-![Step 3](/assets/img//observability/image5.png)
+<img :src="$withBase('/assets/img//observability/image5.png')" alt="Step 3" />
 
 We will discuss each of them below. 
 
@@ -42,8 +43,8 @@ You will see the options bar at the top of the observability page. There, by cha
 - Change the timezone of throughput, latency graphs, and the logs view
 - Change the refresh interval  
 - Turn sharing on/off  
- 
-![Step 1](/assets/img//observability/image1.png)
+
+ <img :src="$withBase('/assets/img//observability/image1.png')" alt="Step 1" />
 
 By default your observability view is private, and therefore is only visible to the application owner. But if you want to share it with others, you can simply toggle the share off switch and share the link.
 
@@ -53,7 +54,7 @@ You will see throughput and latency graphs at the top right of the observability
 
 You have the option to change the default time window either by using the dropdown menu or by selecting the desired time range in any of the two graphs. This allows you to find the throughput and latency of your application at a given timestamp, at a glance.
 
-![Step 1](/assets/img//observability/image8.gif)
+<img :src="$withBase('/assets/img//observability/image8.gif')" alt="Step 1" />
 
 When you change the time window, the unit of the y-axis of the throughput graph will change accordingly.
 
@@ -68,11 +69,11 @@ When you change the time window, the unit of the y-axis of the throughput graph 
 
 You can trace the requests received by your application at a given timestamp by selecting the desired time in the time axis of either the throughput or the latency graph. It will show the received requests along with the request time, latency, and the status. You will even be able to view the status code and the latency for the http connector of a single request, when you click on a particular request.
 
-![Step 1](/assets/img//observability/image7.gif)
+<img :src="$withBase('/assets/img//observability/image7.gif')" alt="Step 1" />
 
 Furthermore, the low-code diagram will display the average latency and the success rate corresponding to any given timestamp that you select from the graphs.
 
-![Step 2](/assets/img//observability/image2.png)
+<img :src="$withBase('/assets/img//observability/image2.png')" alt="Step 2" />
 
 ## View Logs
 
@@ -80,13 +81,13 @@ Furthermore, the low-code diagram will display the average latency and the succe
 
 Let's say you identified a high latency in the latency graph and you want to see the corresponding log entries for the timestamp of that particular latency. What you have to do is, just click on the timestamp that you are interested in on the latency or throughput graph. The relevant log entries will appear in the Logs panel situated right underneath the two graphs.
 
-![Step 1](/assets/img//observability/image11.png)
+<img :src="$withBase('/assets/img//observability/image11.png')" alt="Step 1" />
 
 ### View/Filter Logs of the Entire Application
 
 In case you want to find all the logs in your application, you can visit the logs panel by clicking on the logs button at the top left side of the observability page. There, you can easily filter the logs for a given duration using the dropdown menus provided in the Options Bar. Furthermore, you can quickly filter logs based on a certain log phrase by simply providing it in the Contains search box.
 
-![Step 2](/assets/img//observability/image13.png)
+<img :src="$withBase('/assets/img//observability/image13.png')" alt="Step 2" />
 
 You can also download the log entries using the download button and it will save the log entries as a .txt file in your machine.
 
@@ -94,7 +95,7 @@ You can also download the log entries using the download button and it will save
 
 Root cause analysis view provides everything that you need to debug your application in a single place. It is a very simple but powerful view to find the root cause of a problem in a few seconds. 
 
-![Step 1](/assets/img//observability/image12.png)
+<img :src="$withBase('/assets/img//observability/image12.png')" alt="Step 1" />
 
 The Root Cause Analysis view will contain five equally divided bins based on the time window provided in the Options Bar. In the Logs column against each Date/Time window, the most five unique log entries that have been printed between that bin’s start time and the end time are displayed. Here the logs are having precedence, where it will first show the error logs and then the info logs. Also, the log count is displayed at the end of each log entry. Error, TP, Latency, CPU, and Memory graphs in the remaining columns, display the variation of HTTP error count, Throughput, Latency, CPU usage, and Memory usage respectively for the time duration of each bin.
 
@@ -104,11 +105,11 @@ Let's say you have identified an anomalous behavior by observing the root cause 
 
 To access the flame graph, move the selection box to the desired area and click the green flame graph button at the right bottom corner of the selection box.
 
-![Step 1](/assets/img//observability/image3.gif)
+<img :src="$withBase('/assets/img//observability/image3.gif')" alt="Step 1" />
 
 Now you have the latency flame graph for the time period that you have selected from the previous view. You can further move/adjust the selection and get what you exactly wanted as depicted below.
 
-![Step 2](/assets/img//observability/image10.gif)
+<img :src="$withBase('/assets/img//observability/image10.gif')" alt="Step 2" />
 
 In the flame graph, the Y-axis represents the stack depth and the X-axis represents latency. A box in the graph represents a stack frame. Its label pinpoints the location of the corresponding statement in your code. The length of a box is proportional to the execution latency of the statement. Boxes above it represent its ancestors and those below represent its children.
 

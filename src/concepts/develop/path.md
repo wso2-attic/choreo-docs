@@ -4,7 +4,7 @@
 
 When creating a Choreo application with an API trigger, the Relative path from the host field allows you to specify the path used to trigger the Choreo application. It could also be used to pass path parameters to your application.
 
-![Step 1](/assets/img/path/image1.png)
+<img :src="$withBase('/assets/img/path/image1.png')" alt="Step 1" />
 
 Suppose you create a Choreo application named sample with an API trigger. 
 
