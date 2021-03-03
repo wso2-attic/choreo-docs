@@ -68,7 +68,7 @@ Choreo supports the following statements:
 
  * Log: Allows you to add an entry to the application log at runtime. You can either add an **Info** log or an **Error** log depending on your requirement   
  * If: Allows you to execute a collection of statements if a specified condition is met.    
- * Variable: Allows you to declare a variable of a preffered type depending on your requirement.   
+ * Variable: Allows you to declare a variable of a preferred type depending on your requirement.   
  * For-each: Allows you to traverses through items of a collection of data. For example, traverse through arrays, maps, JSON, XML, and tables.  
  * Respond: Allows you to send a response back to its client. For example, to get an API to respond with an `HTTP_OK` indicating that the request was processed successfully.
  * Return: Allows you to end the ongoing execution of a Choreo application.
