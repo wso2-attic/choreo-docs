@@ -36,7 +36,7 @@ You can use the log statement to add an entry to the application log at runtime.
 
 ### If conditional statement
 
-You can use the if conditional statement when you want to execute a collection of statements if a specified condition is met and execute another set of statements if the condition is not met.
+You can use the if conditional statement to execute a specific collection of statements if a specified condition is met, and to execute another set of statements if the condition is not met.
 
 ![](images/statements/if.png)
 
@@ -50,13 +50,13 @@ You can use the variable statement to declare a variable. There are two approach
 
 ### For-each iteration statement
 
-You can use the for-each iteration statement when you want to traverses through items of a collection of data. For example, to traverse through arrays, maps, JSON, XML, and tables. 
+You can use the for-each iteration statement to traverse through items of a collection of data. e.g., to traverse through arrays, maps, JSON, XML, and tables. 
 
 ![](images/statements/for-each.png)
 
 ### Respond statement
 
-You can use the respond statement when you want the Choreo application to send a response back to its client. For example, to get an API to respond with a `HTTP_OK` indicating that the request was processed successfully.
+You can use the respond statement when you want the Choreo application to send a response back to its client. For example, to get an API to respond with a `HTTP_OK` indicating that the request is successfully processed.
 
 ![](images/statements/respond.png)
 
