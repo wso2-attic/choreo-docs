@@ -8,10 +8,10 @@
   * [Creating an API trigger](#Creating-an-API-trigger)
 * [2-Manual](#2-Manual)
   * [Creating a Manual trigger](#Creating-a-Manual-trigger)
-* [3-Schedule](3-Schedule)
+* [3-Schedule](#3-Schedule)
   * [Creating a Schedule trigger](#Creating-a-Schedule-trigger)
 * [4-Calendar](#4-Calendar)
-  * [Creating a Calendar trigger](Creating-a-Calendar-trigger)
+  * [Creating a Calendar trigger](#Creating-a-Calendar-trigger)
 * [5-GitHub](#5-GitHub)
   * [Creating a GitHub trigger](#Creating-a-GitHub-trigger)
 
